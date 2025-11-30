@@ -1,1 +1,17 @@
+body.dark {
+    background: #0E1116;
+    color: #E4E6EB;
+}
+
+body.dark nav {
+    background: #0C1014;
+}
+
+body.dark footer {
+    background: #0C1014;
+}
+
+body.dark .hero {
+    background: linear-gradient(135deg, #0FBF8A, #003A70);
+}
 

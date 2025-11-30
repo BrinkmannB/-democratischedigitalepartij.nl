@@ -1,1 +1,6 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="24" fill="#003A70"/>
+  <circle cx="120" cy="120" r="84" fill="#0FBF8A"/>
+  <text x="50%" y="53%" font-size="72" font-family="Inter" fill="#fff" text-anchor="middle" font-weight="700">DDP</text>
+</svg>
 

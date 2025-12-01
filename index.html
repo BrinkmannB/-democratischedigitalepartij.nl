@@ -10,10 +10,11 @@
 <body>
 
 <!-- NAVIGATIE (GROOT LOGO) -->
+<!-- NAVIGATIE -->
 <nav class="nav">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.svg" alt="DDP Logo" height="48">
+            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
         </a>
 
         <ul class="nav-links">
@@ -29,6 +30,23 @@
         <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
+
+<!-- MOBIEL MENU -->
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
 
 <div id="mobileMenu" class="mobile-menu">
     <a href="programma.html">Programma</a>

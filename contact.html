@@ -1,22 +1,56 @@
 <section class="content-section">
     <h1>Contact</h1>
 
-    <p>Heb je vragen over de Democratische Digitale Partij, ons programma, of wil je meedoen? Neem gerust contact op.</p>
+    <p>Heb je vragen over de Democratische Digitale Partij, wil je meedenken of meedoen? 
+    Laat hieronder je bericht achter. We reageren zo snel mogelijk.</p>
 
-    <h2>Contactgegevens</h2>
-    <p><strong>E-mail:</strong> <a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
+    <form 
+        method="POST" 
+        action="/__forms.html" 
+        data-cf-form="true"
+        class="contact-form"
+    >
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" required>
 
-    <h2>Pers & Media</h2>
-    <p>Voor persaanvragen, interviews of mediavragen kun je ons bereiken via <a href="mailto:media@democratischedigitalepartij.nl">media@democratischedigitalepartij.nl</a>.</p>
+        <label for="email">E-mail (optioneel)</label>
+        <input type="email" id="email" name="email">
 
-    <h2>Lidmaatschap & betrokkenheid</h2>
-    <p>Wil je lid worden of deelnemen aan een commissie? Ga naar onze <a href="/lidworden.html">Lid worden</a>-pagina of stuur ons een bericht.</p>
+        <label for="subject">Onderwerp</label>
+        <input type="text" id="subject" name="subject" required>
 
-    <h2>Volg ons</h2>
-    <ul>
-        <li><a href="#">LinkedIn — binnenkort live</a></li>
-        <li><a href="#">Twitter/X — binnenkort live</a></li>
-        <li><a href="#">Instagram — binnenkort live</a></li>
-    </ul>
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="primary-btn">Verstuur bericht</button>
+    </form>
+
+    <p class="smallprint">
+        Dit formulier wordt veilig verwerkt via Cloudflare Pages. 
+        We slaan geen gegevens op voor marketingdoeleinden en delen nooit iets met derden.
+    </p>
 </section>
 
+<style>
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+.contact-form button {
+    margin-top: 8px;
+}
+.smallprint {
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+</style>

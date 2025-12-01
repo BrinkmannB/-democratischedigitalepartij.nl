@@ -11,4 +11,39 @@
     <ul>
         <li>Updates over onze plannen en activiteiten</li>
         <li>Mogelijkheid om mee te denken over AI- en digitaliseringsbeleid</li>
-        <li>Uitnodiginge
+        <li>Uitnodigingen voor online sessies en consultaties</li>
+        <li>Toegang tot nieuwe initiatieven binnen de partij</li>
+    </ul>
+
+    <h2>Aanmelden als supporter</h2>
+
+    <form 
+        name="support"
+        method="POST"
+        action="https://formspree.io/f/mnqepjlv"
+        class="contact-form"
+    >
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="interest">Waar wil je aan bijdragen?</label>
+        <select id="interest" name="interest">
+            <option value="meedenken">Meedenken over beleid</option>
+            <option value="campagne">Campagne helpen</option>
+            <option value="onderzoek">Onderzoek & analyse</option>
+            <option value="anders">Iets anders</option>
+        </select>
+
+        <label for="message">Toelichting (optioneel)</label>
+        <textarea id="message" name="message" rows="5"></textarea>
+
+        <button type="submit" class="primary-btn">Aanmelden</button>
+    </form>
+
+    <p class="smallprint">
+        Je gegevens worden alleen gebruikt voor communicatie met de Democratische Digitale Partij.
+    </p>
+</section>

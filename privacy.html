@@ -2,46 +2,146 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Privacybeleid - Democratische Digitale Partij</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacyverklaring – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<nav>
-    <a class="logo" href="/index.html">DDP</a>
-    <ul>
-        <li><a href="/programma.html">Programma</a></li>
-        <li><a href="/partij.html">De Partij</a></li>
-        <li><a href="/bestuur.html">Bestuur</a></li>
-        <li><a href="/verkiezingen.html">Verkiezingen</a></li>
-        <li><a href="/nieuws.html">Nieuws</a></li>
-        <li><a href="/lidworden.html">Lid worden</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-    </ul>
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
 </nav>
 
-<section>
-    <h1>Privacybeleid</h1>
-    <p>De Democratische Digitale Partij verwerkt persoonsgegevens uitsluitend voor democratische processen en ledenadministratie.</p>
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-    <h2>Wat wij verzamelen</h2>
-    <ul>
-        <li>Naam en contactgegevens bij lidmaatschap</li>
-        <li>Berichten die je naar ons stuurt</li>
-    </ul>
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
 
-    <h2>Wat wij niet doen</h2>
-    <ul>
-        <li>Geen commerciële tracking</li>
-        <li>Geen microtargeting</li>
-        <li>Geen profilering zonder toestemming</li>
-    </ul>
+<!-- HERO -->
+<section class="hero small-hero">
+    <div class="hero-content">
+        <h1>Privacyverklaring</h1>
+        <p class="subtitle">Wij beschermen jouw gegevens. Altijd.</p>
+    </div>
 </section>
 
-<footer>
-    Democratische Digitale Partij © 2025
+<!-- CONTENT -->
+<section class="privacy-content">
+    <div class="container">
+
+        <h2>1. Inleiding</h2>
+        <p>
+            De Democratische Digitale Partij (DDP) staat voor een samenleving waar technologie
+            transparant, eerlijk en mensgericht is. Privacy is daarbij een grondrecht.
+            In deze privacyverklaring leggen we uit welke gegevens we verzamelen, waarom,
+            en hoe we die beschermen.
+        </p>
+
+        <h2>2. Verantwoordelijke</h2>
+        <p>
+            Democratische Digitale Partij (DDP)<br>
+            E-mail: <a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a>
+        </p>
+
+        <h2>3. Welke gegevens we verwerken</h2>
+        <p>Wij verwerken uitsluitend gegevens die jij actief verstrekt:</p>
+        <ul>
+            <li>Naam</li>
+            <li>E-mailadres</li>
+            <li>Eventuele aanvullende informatie die je zelf aanlevert</li>
+        </ul>
+
+        <h2>4. Waarom we gegevens verwerken</h2>
+        <p>Wij verwerken gegevens voor de volgende doeleinden:</p>
+        <ul>
+            <li>Lidmaatschapsadministratie</li>
+            <li>Contactverzoeken beantwoorden</li>
+            <li>Nieuwsbrieven sturen (alleen met toestemming)</li>
+            <li>Interne politieke processen en ledenparticipatie</li>
+        </ul>
+
+        <h2>5. Bewaartermijnen</h2>
+        <p>
+            We bewaren gegevens **niet langer dan strikt noodzakelijk**.
+            Je kunt altijd een verwijderverzoek indienen.
+        </p>
+
+        <h2>6. Delen van gegevens</h2>
+        <p>
+            Wij verkopen, verhandelen of delen jouw gegevens **nooit** met commerciële partijen.
+            Soms maken we gebruik van verwerkers (zoals e-mailproviders), maar alleen onder strenge afspraken.
+        </p>
+
+        <h2>7. Beveiliging</h2>
+        <p>
+            Wij nemen technische en organisatorische maatregelen om jouw gegevens te beschermen, waaronder:
+        </p>
+        <ul>
+            <li>DNSSEC & TLS 1.3</li>
+            <li>Cloudflare beveiligingslaag</li>
+            <li>Beperkte toegang tot gegevens</li>
+            <li>Geen tracking op onze website</li>
+        </ul>
+
+        <h2>8. Jouw rechten</h2>
+        <p>Je hebt altijd het recht op:</p>
+        <ul>
+            <li>Inzage</li>
+            <li>Correctie</li>
+            <li>Verwijdering</li>
+            <li>Overdraagbaarheid</li>
+            <li>Bezwaar tegen verwerking</li>
+        </ul>
+
+        <p>
+            Dien verzoeken in via  
+            <a href="mailto:privacy@democratischedigitalepartij.nl">privacy@democratischedigitalepartij.nl</a>.
+        </p>
+
+        <h2>9. Contact</h2>
+        <p>Voor vragen over privacy:  
+            <a href="mailto:privacy@democratischedigitalepartij.nl">privacy@democratischedigitalepartij.nl</a>
+        </p>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
+    </div>
 </footer>
 
 </body>
 </html>
-

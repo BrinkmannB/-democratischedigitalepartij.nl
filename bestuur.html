@@ -1,51 +1,79 @@
-.bestuur {
-    padding: 60px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestuur – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
 
-.bestuur h2 {
-    margin-top: 40px;
-    font-size: 1.8rem;
-}
+<!-- NAVIGATIE -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
+        </a>
 
-.bestuur p {
-    margin-top: 14px;
-    line-height: 1.6;
-}
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html" class="active">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-.bestuur-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 40px;
-    margin-top: 40px;
-}
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
 
-.bestuurslid {
-    text-align: center;
-    padding: 20px;
-}
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
 
-.bestuurslid-foto {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    background-size: cover;
-    background-position: center;
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
 }
+</script>
 
-.placeholder {
-    background: linear-gradient(135deg, #002046 0%, #003A6C 100%);
-}
 
-.bestuurslid-bio {
-    margin-top: 8px;
-    font-size: 0.95rem;
-    opacity: 0.85;
-}
+<!-- HEADER -->
+<section class="page-header">
+    <h1>Het Bestuur van de Democratische Digitale Partij</h1>
+    <p>Transparant, onafhankelijk en volledig in dienst van onze leden.</p>
+</section>
 
-.bestuur-cta {
-    text-align: center;
-    margin-top: 60px;
-}
+
+<!-- BESTUURSLEDEN -->
+<section class="bestuur">
+    <div class="bestuur-grid">
+
+        <!-- JOUW BLOK -->
+        <div class="bestuurslid-card">
+            <div 
+                class="bestuurslid-foto" 
+                style="background-image: url('assets/bas.png');">
+            </div>
+
+            <h3>Bas Brinkmann</h3>
+            <p class="functie">Oprichter & Voorzitter</p>
+
+            <p class="bio">
+                Bas Brinkmann is de oprichter van de Democratische Digitale Partij en 
+                een gedreven voorvechter van transparante, veilige en mensgerichte digitale systemen. 
+                Met een achtergrond in AI-governance, digitale ethiek en maatschappelijke innovatie 
+                zet hij zich in voor technologie die burgers versterkt – nooit verzwakt.
+            </p>
+
+            <p class="contact-links">
+                <a href="mailto:d

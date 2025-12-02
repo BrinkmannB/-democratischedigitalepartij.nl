@@ -1,1 +1,8 @@
+Contact: mailto:security@democratischedigitalepartij.nl
+Encryption: https://democratischedigitalepartij.nl/pgp.txt
+Preferred-Languages: nl, en
+Canonical: https://democratischedigitalepartij.nl/.well-known/security.txt
+Policy: https://democratischedigitalepartij.nl/privacy.html
+Hiring: https://democratischedigitalepartij.nl/bestuur.html
+Expires: 2030-12-31T23:59:00Z
 

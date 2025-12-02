@@ -1,52 +1,105 @@
-<section class="content-section">
-    <h1>Contact</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <p>Heb je vragen over de Democratische Digitale Partij, wil je meedenken of meedoen? 
-    Neem dan gerust contact met ons op via het onderstaande formulier of per e-mail.</p>
+<body>
 
-    <h2>Stuur ons een bericht</h2>
-
-    <form 
-        name="contact"
-        method="POST"
-        action="https://formspree.io/f/mnqepjlv"
-        class="contact-form"
-    >
-        <label for="name">Naam</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="subject">Onderwerp</label>
-        <input type="text" id="subject" name="subject" required>
-
-        <label for="message">Bericht</label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-
-        <button type="submit" class="primary-btn">Verstuur bericht</button>
-    </form>
-
-    <h2>Direct mailen</h2>
-    <p>
-        Je kunt ons ook bereiken via:<br>
-        <a href="mailto:democratischedigitalepartij@gmail.com">
-            democratischedigitalepartij@gmail.com
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
         </a>
-    </p>
 
-    <p class="smallprint">
-        We reageren meestal binnen 48 uur. Gegevens worden alleen gebruikt om jouw bericht te beantwoorden.
-    </p>
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html" class="active">Contact</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
+
+<!-- HEADER -->
+<header class="page-header">
+    <h1>Contact</h1>
+    <p>Neem contact op met de Democratische Digitale Partij. Wij reageren doorgaans binnen 24 uur.</p>
+</header>
+
+<section class="contact-section">
+    <div class="contact-grid">
+
+        <!-- Algemeen -->
+        <div class="contact-card">
+            <h2>Algemene vragen</h2>
+            <p>Voor algemene aanvragen, informatie of samenwerking.</p>
+            <a href="mailto:info@democratischedigitalepartij.nl" class="contact-mail">
+                info@democratischedigitalepartij.nl
+            </a>
+        </div>
+
+        <!-- Pers -->
+        <div class="contact-card">
+            <h2>Pers & media</h2>
+            <p>Voor interviewaanvragen, statements of persverzoeken.</p>
+            <a href="mailto:pers@democratischedigitalepartij.nl" class="contact-mail">
+                pers@democratischedigitalepartij.nl
+            </a>
+        </div>
+
+        <!-- Bestuur -->
+        <div class="contact-card">
+            <h2>Bestuur</h2>
+            <p>Formele communicatie met het landelijke bestuur.</p>
+            <a href="mailto:bestuur@democratischedigitalepartij.nl" class="contact-mail">
+                bestuur@democratischedigitalepartij.nl
+            </a>
+        </div>
+
+        <!-- Lidmaatschap -->
+        <div class="contact-card">
+            <h2>Lidmaatschap & bijdragen</h2>
+            <p>Vragen over supporter worden, donaties of bijdragen.</p>
+            <a href="mailto:lidmaatschap@democratischedigitalepartij.nl" class="contact-mail">
+                lidmaatschap@democratischedigitalepartij.nl
+            </a>
+        </div>
+    </div>
 </section>
 
-<style>
-.contact-form {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-.contact-form input,
-.contact-form textarea {
-    padding:
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

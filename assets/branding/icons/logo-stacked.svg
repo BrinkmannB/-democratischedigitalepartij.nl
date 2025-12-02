@@ -1,1 +1,17 @@
+<svg width="320" height="480" viewBox="0 0 320 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="40" y="0" width="240" height="240" rx="40" fill="#002046"/>
+    <path d="M90 50H150C185 50 215 80 215 120C215 160 185 190 150 190H90V50Z"
+          stroke="#00B4FF" stroke-width="16" fill="none"/>
+    <path d="M225 50H260C285 50 305 70 305 100C305 130 285 150 260 150H225V50Z"
+          stroke="#00B4FF" stroke-width="16" fill="none"/>
+
+    <text x="160" y="325" text-anchor="middle" font-family="Inter, sans-serif"
+          font-size="48" font-weight="700" fill="#002046">
+        Democratische
+    </text>
+    <text x="160" y="385" text-anchor="middle" font-family="Inter, sans-serif"
+          font-size="48" font-weight="700" fill="#002046">
+        Digitale Partij
+    </text>
+</svg>
 

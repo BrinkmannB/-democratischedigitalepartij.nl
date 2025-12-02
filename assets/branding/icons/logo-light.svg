@@ -1,1 +1,8 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="240" height="240" rx="48" fill="#ffffff"/>
+    <path d="M60 60H110C140 60 165 85 165 120C165 155 140 180 110 180H60V60Z"
+          stroke="#002046" stroke-width="18" fill="none" stroke-linejoin="round"/>
+    <path d="M175 60H205C225 60 240 80 240 105C240 130 225 150 205 150H175V60Z"
+          stroke="#002046" stroke-width="18" fill="none" stroke-linejoin="round"/>
+</svg>
 

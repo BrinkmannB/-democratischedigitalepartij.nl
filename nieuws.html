@@ -1,26 +1,95 @@
-<section class="content-section">
-    <h1>Nieuws</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuws – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <article>
-        <h2>DDP lanceert officieel haar digitale partijprogramma</h2>
-        <p class="date">1 december 2025</p>
-        <p>Vandaag lanceert de Democratische Digitale Partij haar volledige programma voor een mensgerichte, veilige en transparante digitale samenleving. De partij zet in op radicale openheid, uitlegbare algoritmes en eerlijke digitale besluitvorming.</p>
-    </article>
+<body>
 
-    <hr>
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" class="logo-img" alt="DDP Logo">
+        </a>
 
-    <article>
-        <h2>Digitale grondrechten als basis voor een nieuwe bestuurscultuur</h2>
-        <p class="date">26 november 2025</p>
-        <p>De DDP pleit voor een stevig fundament van digitale grondrechten in de Grondwet. Dit moet burgers meer zeggenschap en bescherming geven in een tijd waarin technologische systemen onze samenleving steeds meer vormgeven.</p>
-    </article>
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html" class="active">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-    <hr>
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
 
-    <article>
-        <h2>Overheid moet AI verplicht openbaar maken, stelt DDP</h2>
-        <p class="date">18 november 2025</p>
-        <p>Veel algoritmes binnen de overheid zijn nog steeds niet openbaar. De DDP wil volledige transparantie en onafhankelijke toetsing als wettelijke norm voor alle AI-systemen die publieke taken uitvoeren.</p>
-    </article>
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
 
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
+
+<!-- HERO -->
+<section class="hero small-hero">
+    <div class="hero-content">
+        <h1>Nieuws</h1>
+        <p>Updates, standpunten en mededelingen van de Democratische Digitale Partij.</p>
+    </div>
 </section>
+
+<!-- NIEUWS GRID -->
+<section class="nieuws">
+    <div class="nieuws-grid">
+
+        <article class="nieuws-card">
+            <h3>DDP lanceert officieel verkiezingsprogramma</h3>
+            <p class="datum">2 december 2025</p>
+            <p>Met trots presenteert de DDP haar eerste volledige programma voor een veilige, transparante en mensgerichte digitale toekomst.</p>
+            <a href="#" class="secondary-btn">Lees meer</a>
+        </article>
+
+        <article class="nieuws-card">
+            <h3>Nieuwe digitale grondrechten centraal in onze campagne</h3>
+            <p class="datum">28 november 2025</p>
+            <p>De DDP zet zwaar in op burgerrechten, sterke publieke waarden en democratische controle op technologie.</p>
+            <a href="#" class="secondary-btn">Lees meer</a>
+        </article>
+
+        <article class="nieuws-card">
+            <h3>Oproep: Nederland verdient transparante AI</h3>
+            <p class="datum">20 november 2025</p>
+            <p>Voor publieke technologie moet hetzelfde gelden als voor wetten: het moet toetsbaar, uitlegbaar en democratisch controleerbaar zijn.</p>
+            <a href="#" class="secondary-btn">Lees meer</a>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

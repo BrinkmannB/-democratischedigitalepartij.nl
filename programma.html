@@ -1,30 +1,105 @@
-.programma {
-    padding: 60px 20px;
-    max-width: 850px;
-    margin: 0 auto;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programma – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-.programma h2 {
-    margin-top: 40px;
-    font-size: 1.8rem;
-}
+<body>
 
-.programma p {
-    margin-top: 14px;
-    line-height: 1.6;
-}
+<!-- NAVIGATIE -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
+        </a>
 
-.programma ul {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
+        <ul class="nav-links">
+            <li><a href="programma.html" class="active">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-.programma li {
-    margin-bottom: 8px;
-}
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
 
-.programma-cta {
-    text-align: center;
-    margin-top: 60px;
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html" class="active">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
 }
+</script>
+
+<!-- HERO -->
+<section class="sub-hero">
+    <h1>Ons Programma</h1>
+    <p>Voor een vrije, veilige en mensgerichte digitale toekomst.</p>
+</section>
+
+<!-- PROGRAMMA BLOKKEN -->
+<section class="programma-page">
+    
+    <h2>1. Digitale Grondrechten</h2>
+    <p>Burgers krijgen wettelijk verankerde digitale grondrechten: privacy, autonomie en bescherming tegen misbruik van technologie.</p>
+    <ul>
+        <li>Recht op menselijke autonomie boven algoritmische besluitvorming</li>
+        <li>Strikte grenzen op surveillance door overheid en bedrijven</li>
+        <li>Volledige inzage in welke data de overheid van burgers bewaart</li>
+    </ul>
+
+    <h2>2. Publieke Controle op Algoritmes</h2>
+    <p>Geen geheime black-box systemen in de overheid — technologie moet uitlegbaar, toetsbaar en democratisch controleerbaar zijn.</p>
+    <ul>
+        <li>Openbaar algoritmeregister verplicht voor alle overheidsorganisaties</li>
+        <li>Verbod op niet-uitlegbare AI in publieke dienstverlening</li>
+        <li>Onafhankelijke toetsing op discriminatie en risico</li>
+    </ul>
+
+    <h2>3. Mensgerichte AI</h2>
+    <p>Technologie moet mensen versterken, nooit onderdrukken of buitensluiten.</p>
+    <ul>
+        <li>Verbod op AI-systemen die burgers profileren voor risico-inschatting</li>
+        <li>AI moet altijd optioneel zijn in publieke dienstverlening</li>
+        <li>Recht op een menselijke behandeling en second opinion</li>
+    </ul>
+
+    <h2>4. Open Publieke Digitale Infrastructuur</h2>
+    <p>De digitale overheid moet betrouwbaar, veilig en onafhankelijk zijn.</p>
+    <ul>
+        <li>Open source als standaard voor publieke software</li>
+        <li>Minder afhankelijkheid van Big Tech</li>
+        <li>Nationale digitale infrastructuur voor burgerdiensten</li>
+    </ul>
+
+    <div class="programma-cta">
+        <a href="lidworden.html" class="primary-btn big">Doe mee met de DDP</a>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a>
+    </div>
+</footer>
+
+</body>
+</html>

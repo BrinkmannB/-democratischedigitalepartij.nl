@@ -1,20 +1,87 @@
-<section class="content-section">
-    <h1>Verkiezingen</h1>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkiezingen – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <p>De Democratische Digitale Partij zet zich in voor een toekomst waarin technologie eerlijk, veilig en mensgericht wordt ingezet. Tijdens verkiezingen presenteren wij een helder, inhoudelijk en toekomstgericht programma dat Nederland voorbereidt op de digitale samenleving.</p>
+<body>
 
-    <h2>Onze Speerpunten voor de Verkiezingen</h2>
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" class="logo-img" alt="DDP Logo">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html" class="active">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
+
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
+
+
+<!-- HERO -->
+<section class="hero small-hero">
+    <div class="hero-content">
+        <h1>Verkiezingen 2026</h1>
+        <p>Een digitaal Nederland dat werkt voor iedereen — veilig, eerlijk en mensgericht.</p>
+    </div>
+</section>
+
+<!-- CONTENT -->
+<section class="verkiezingen">
+    <h2>Onze belofte aan Nederland</h2>
+    <p>De Democratische Digitale Partij doet mee aan de verkiezingen met één missie: een digitale overheid die betrouwbaar, transparant en rechtvaardig is.</p>
+
+    <h2>Kernpunten voor 2026</h2>
     <ul>
-        <li><strong>Bescherming van digitale grondrechten</strong> — privacy, autonomie en menselijke waardigheid staan centraal.</li>
-        <li><strong>Uitlegbare overheidsbesluitvorming</strong> — geen algoritmes die werken achter gesloten deuren.</li>
-        <li><strong>Digitale inclusie</strong> — iedereen moet veilig en volwaardig mee kunnen doen.</li>
-        <li><strong>Verantwoorde AI in de publieke sector</strong> — mensgericht, toetsbaar en eerlijk.</li>
-        <li><strong>Open publieke infrastructuur</strong> — publieke technologie moet onafhankelijk, transparant en toegankelijk zijn.</li>
+        <li>Verankerde digitale grondrechten voor elke Nederlander.</li>
+        <li>Einde aan black-box algoritmes in de overheid.</li>
+        <li>Mensgerichte technologie die niemand buitensluit.</li>
+        <li>Een veilige, open en publieke digitale infrastructuur.</li>
+        <li>Volledige democratische controle over AI in de overheid.</li>
     </ul>
 
-    <h2>Kandidaturen</h2>
-    <p>De DDP werkt met open kandidatenlijsten. Iedere kandidaat committeert zich aan onze waarden: transparantie, rechtvaardigheid en digitale verantwoordelijkheid.</p>
+    <h2>Doe mee</h2>
+    <p>De DDP groeit snel — maar echte verandering maken we samen. Help mee, word lid of steun de campagne.</p>
 
-    <h2>Doe Mee</h2>
-    <p>Wil jij bijdragen aan de digitale toekomst van Nederland? Overweeg om voor de DDP te stemmen of je aan te sluiten als vrijwilliger. Bezoek onze <a href="/lidworden.html">Lid worden</a>-pagina voor meer informatie.</p>
+    <a href="lidworden.html" class="primary-btn big">Word lid van de DDP</a>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

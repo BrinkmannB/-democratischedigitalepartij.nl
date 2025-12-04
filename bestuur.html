@@ -1,25 +1,108 @@
-.bestuur-grid {
-    max-width: 1100px;
-    margin: 80px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-    padding: 0 20px;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestuur – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-.bestuur-card {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
-    text-align: center;
-}
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP logo" class="logo-img">
+        </a>
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html" class="active">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+</nav>
 
-.bestuur-foto {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
 }
+</script>
+
+
+<!-- HERO -->
+<section class="hero small-hero">
+    <div class="hero-content">
+        <h1>Het Bestuur</h1>
+        <p>De Democratische Digitale Partij wordt geleid door mensen met visie, transparantie en een hart voor Nederland.</p>
+    </div>
+</section>
+
+
+<!-- BESTUUR GRID -->
+<section class="bestuur">
+    <div class="bestuur-grid">
+
+        <!-- JOUW BLOK -->
+        <div class="bestuur-card">
+            <img src="assets/bas.png" alt="Bas Brinkmann" class="bestuur-foto">
+            <h3>Bas Brinkmann</h3>
+            <p class="functie">Oprichter & Partijvoorzitter</p>
+            <p class="bio">
+                Bas is initiatiefnemer van de DDP en zet zich in voor een veilige, transparante 
+                en mensgerichte digitale samenleving. Zijn focus ligt op digitale grondrechten, 
+                AI-ethiek en publieke controle op technologie.
+            </p>
+        </div>
+
+        <!-- VOORBEELD ANDERE BESTUURSLEDEN (je kunt zelf aanvullen) -->
+        <div class="bestuur-card">
+            <img src="assets/placeholder.png" alt="Bestuurslid" class="bestuur-foto">
+            <h3>Nog te bepalen</h3>
+            <p class="functie">Secretaris</p>
+            <p class="bio">Wordt binnenkort bekendgemaakt.</p>
+        </div>
+
+        <div class="bestuur-card">
+            <img src="assets/placeholder.png" alt="Bestuurslid" class="bestuur-foto">
+            <h3>Nog te bepalen</h3>
+            <p class="functie">Penningmeester</p>
+            <p class="bio">Wordt binnenkort bekendgemaakt.</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Doe mee met de DDP</h2>
+    <p>Sluit je aan bij de beweging die technologie weer in dienst van mensen zet.</p>
+    <a href="lidworden.html" class="primary-btn big">Word lid</a>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

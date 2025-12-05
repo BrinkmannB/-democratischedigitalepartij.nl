@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact – Democratische Digitale Partij</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
+
 <body>
 
 <!-- NAV -->
 <nav class="nav">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
+            <img src="assets/logo.svg" alt="DDP Logo">
         </a>
+
         <ul class="nav-links">
             <li><a href="programma.html">Programma</a></li>
             <li><a href="partij.html">De Partij</a></li>
@@ -24,114 +25,66 @@
             <li><a href="lidworden.html">Word lid</a></li>
             <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
-
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a href="programma.html">Programma</a>
-    <a href="partij.html">De Partij</a>
-    <a href="bestuur.html">Bestuur</a>
-    <a href="verkiezingen.html">Verkiezingen</a>
-    <a href="nieuws.html">Nieuws</a>
-    <a href="lidworden.html">Word lid</a>
-    <a class="active" href="contact.html">Contact</a>
-</div>
-
-<script>
-function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("open");
-}
-</script>
-
-<!-- SUBNAV -->
-<div class="subnav">
-    <div class="subnav-inner">
-        <a href="index.html">Home</a> /
-        <span>Contact</span>
-    </div>
-</div>
-
 <!-- HERO -->
-<section class="small-hero">
-    <div class="hero-content">
-        <h1>Contact met de DDP</h1>
-        <p class="subtitle">We staan open voor vragen, ideeën en samenwerkingen.</p>
-    </div>
-</section>
+<div class="small-hero">
+    <h1>Contact met de DDP</h1>
+    <p>We staan open voor vragen, ideeën, samenwerkingen en persverzoeken.</p>
+</div>
 
-<!-- CONTENT -->
-<section class="content-container">
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs">
+    <a href="index.html">Home</a> › Contact
+</div>
 
+<!-- CONTACTGEGEVENS -->
+<div class="section">
     <h2>Contactgegevens</h2>
     <p>
-        Je kunt de Democratische Digitale Partij bereiken via onderstaande mailadressen.
+        Je kunt de Democratische Digitale Partij bereiken via onderstaande adressen.
         We reageren zo snel mogelijk.
     </p>
 
     <div class="contact-grid">
 
         <div class="contact-card">
-            <h3>Algemene vragen</h3>
-            <p>
-                <a href="mailto:info@democratischedigitalepartij.nl">
-                    info@democratischedigitalepartij.nl
-                </a>
-            </p>
+            <h3>Algemeen</h3>
+            <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
         </div>
 
         <div class="contact-card">
             <h3>Lidmaatschap</h3>
-            <p>
-                <a href="mailto:lid@democratischedigitalepartij.nl">
-                    lid@democratischedigitalepartij.nl
-                </a>
-            </p>
+            <p><a href="mailto:lid@democratischedigitalepartij.nl">lid@democratischedigitalepartij.nl</a></p>
+        </div>
+
+        <div class="contact-card">
+            <h3>Vrijwilligers</h3>
+            <p><a href="mailto:vrijwilliger@democratischedigitalepartij.nl">vrijwilliger@democratischedigitalepartij.nl</a></p>
         </div>
 
         <div class="contact-card">
             <h3>Pers & media</h3>
-            <p>
-                <a href="mailto:pers@democratischedigitalepartij.nl">
-                    pers@democratischedigitalepartij.nl
-                </a>
-            </p>
+            <p><a href="mailto:pers@democratischedigitalepartij.nl">pers@democratischedigitalepartij.nl</a></p>
         </div>
-
     </div>
+</div>
 
-    <h2>Bericht sturen</h2>
-    <p>Stuur ons een bericht via e-mail. Binnenkort voegen we een veilig, privacyvriendelijk contactformulier toe.</p>
-
-    <h2>Vrijwilligers & bijdragen</h2>
+<!-- EXTRA INFO -->
+<div class="section">
+    <h2>Meer weten of samenwerken?</h2>
     <p>
-        Wil je bijdragen aan de campagne of onze beweging versterken?
-        Meld je dan aan via:
-        <br>
-        <a href="mailto:vrijwilliger@democratischedigitalepartij.nl">
-            vrijwilliger@democratischedigitalepartij.nl
-        </a>
+        De DDP werkt samen met burgers, experts, maatschappelijke organisaties en onderzoekers.
+        Voor samenwerkingen of beleidsvragen kun je contact opnemen via het algemene adres.
     </p>
+</div>
 
-    <div class="page-cta">
-        <a href="lidworden.html" class="primary-btn big">Word lid</a>
-        <a href="doneren.html" class="secondary-btn big" style="margin-left:12px;">Doneer</a>
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-        <p>© 2025 Democratische Digitale Partij</p>
-        <p>
-            <a href="mailto:info@democratischedigitalepartij.nl">
-                info@democratischedigitalepartij.nl
-            </a>
-        </p>
-    </div>
-</footer>
+<!-- CTA -->
+<div class="footer-cta">
+    <a href="lidworden.html" class="cta-blue">Word lid</a>
+    <a href="doneren.html" class="cta-outline">Doneer</a>
+</div>
 
 </body>
 </html>

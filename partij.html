@@ -5,132 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Partij – Democratische Digitale Partij</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
+
 <body>
 
-<!-- NAV -->
+<!-- NAVIGATIE -->
 <nav class="nav">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
+            <img src="assets/logo.svg" alt="DDP Logo">
         </a>
+
         <ul class="nav-links">
             <li><a href="programma.html">Programma</a></li>
-            <li><a class="active" href="partij.html">De Partij</a></li>
+            <li><a href="partij.html" class="active">De Partij</a></li>
             <li><a href="bestuur.html">Bestuur</a></li>
             <li><a href="verkiezingen.html">Verkiezingen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
             <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a href="programma.html">Programma</a>
-    <a class="active" href="partij.html">De Partij</a>
-    <a href="bestuur.html">Bestuur</a>
-    <a href="verkiezingen.html">Verkiezingen</a>
-    <a href="nieuws.html">Nieuws</a>
-    <a href="lidworden.html">Word lid</a>
-    <a href="contact.html">Contact</a>
-</div>
-
-<script>
-function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("open");
-}
-</script>
-
-<!-- SUBNAV -->
-<div class="subnav">
-    <div class="subnav-inner">
-        <a href="index.html">Home</a> /
-        <span>De Partij</span>
-    </div>
-</div>
-
 <!-- HERO -->
-<section class="small-hero">
-    <div class="hero-content">
-        <h1>Over de Democratische Digitale Partij</h1>
-        <p class="subtitle">Een nieuwe politieke beweging voor een digitale toekomst die van iedereen is.</p>
-    </div>
-</section>
+<div class="small-hero">
+    <h1>Over de Democratische Digitale Partij</h1>
+    <p>Een nieuwe politieke beweging voor een eerlijke en mensgerichte digitale toekomst.</p>
+</div>
 
-<!-- CONTENT -->
-<section class="content-container">
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs">
+    <a href="index.html">Home</a> › De Partij
+</div>
 
+<!-- CONTENT BLOKKEN -->
+<div class="section">
     <h2>Wie wij zijn</h2>
     <p>
-        De Democratische Digitale Partij (DDP) is een onafhankelijke politieke beweging die werkt aan 
-        een eerlijk, transparant en mensgericht digitaal Nederland. Wij staan voor een samenleving 
-        waarin technologie nooit macht verlegt van de burger naar bedrijven of de overheid, maar juist 
-        de democratie versterkt.
+        De Democratische Digitale Partij (DDP) is een onafhankelijke politieke beweging die werkt aan een eerlijk,
+        transparant en mensgericht digitaal Nederland. Wij staan voor een samenleving waarin technologie nooit macht
+        verlegt van burgers naar bedrijven of de overheid, maar juist democratie versterkt.
     </p>
+</div>
 
+<div class="section">
     <h2>Onze kernwaarden</h2>
+    <ul>
+        <li><strong>Vrijheid:</strong> autonomie, privacy en digitale veiligheid voor iedere burger.</li>
+        <li><strong>Transparantie:</strong> beleid en algoritmes moeten controleerbaar zijn voor het publiek.</li>
+        <li><strong>Menselijkheid:</strong> technologie moet mensen versterken — nooit schaden of sturen.</li>
+        <li><strong>Gelijkheid:</strong> gelijke kansen, gelijke behandeling en gelijke toegang tot digitale diensten.</li>
+    </ul>
+</div>
 
-    <div class="card-list">
-        <div class="card">
-            <h3>Vrijheid</h3>
-            <p>Iedereen heeft recht op autonomie, privacy en digitale veiligheid.</p>
-        </div>
-        <div class="card">
-            <h3>Transparantie</h3>
-            <p>Beleid, algoritmes en systemen moeten controleerbaar zijn door het publiek.</p>
-        </div>
-        <div class="card">
-            <h3>Menselijkheid</h3>
-            <p>Technologie moet mensen versterken — nooit schaden, uitsluiten of sturen.</p>
-        </div>
-        <div class="card">
-            <h3>Gelijkheid</h3>
-            <p>Digitale kansen en bescherming zijn voor *iedere* burger.</p>
-        </div>
-    </div>
-
+<div class="section">
     <h2>Waarom wij bestaan</h2>
     <p>
-        Digitalisering biedt enorme kansen, maar brengt ook risico’s: dataverzameling, algoritmische 
-        discriminatie, publieke afhankelijkheid van Big Tech en verlies van menselijke controle. 
-        De DDP is opgericht om richting te geven aan deze digitale transformatie — met wetten, 
-        structuren en waarden die mensen centraal stellen.
+        Digitalisering biedt enorme kansen, maar brengt ook risico’s: dataverzameling, algoritmische discriminatie,
+        afhankelijkheid van Big Tech, verlies van publieke controle en groeiende ongelijkheid.
+        De DDP is opgericht om richting te geven aan deze digitale transformatie — met wetten, structuren en waarden
+        die de mens centraal stellen.
     </p>
+</div>
 
+<div class="section">
     <h2>Onze rol in de samenleving</h2>
     <ul>
-        <li>Wij bieden een politiek alternatief dat digitale waarden centraal zet.</li>
-        <li>Wij ontwikkelen beleid dat publieke controle versterkt.</li>
-        <li>Wij strijden voor open digitale infrastructuur en een vrije informatiesamenleving.</li>
-        <li>Wij bouwen aan een betrokken ledenorganisatie voor de toekomst.</li>
+        <li>Wij zetten digitalisering weer democratisch onder controle.</li>
+        <li>Wij bouwen aan publieke digitale infrastructuur die van iedereen is, niet van bedrijven.</li>
+        <li>Wij versterken burgerrechten in het algoritmische tijdperk.</li>
+        <li>Wij stimuleren open technologie, transparantie en digitale autonomie.</li>
     </ul>
+</div>
 
-    <h2>De toekomst van de DDP</h2>
+<div class="section">
+    <h2>De toekomst die wij bouwen</h2>
     <p>
-        Wij groeien uit tot een brede beweging die burgers, experts, onderzoekers en professionals 
-        samenbrengt. Iedereen die vindt dat digitalisering eerlijker, veiliger en mensgerichter moet, 
-        hoort bij ons.
+        De DDP bouwt aan een brede beweging van burgers, experts, onderzoekers en professionals.
+        Iedereen die vindt dat digitalisering eerlijker, veiliger en mensgerichter moet — hoort bij ons.
     </p>
+</div>
 
-    <!-- CTA -->
-    <div class="page-cta">
-        <a href="lidworden.html" class="primary-btn big">
-            Sluit je aan bij de DDP
-        </a>
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-        <p>© 2025 Democratische Digitale Partij</p>
-        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
-    </div>
-</footer>
+<!-- CTA -->
+<div class="footer-cta">
+    <a href="lidworden.html" class="cta-blue">Word lid</a>
+    <a href="doneren.html" class="cta-outline">Doneer</a>
+</div>
 
 </body>
 </html>

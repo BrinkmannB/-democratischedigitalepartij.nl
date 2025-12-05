@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verkiezingen – Democratische Digitale Partij</title>
+    <title>Verkiezingen 2026 – Democratische Digitale Partij</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
-
 <body>
 
 <!-- NAV -->
 <nav class="nav">
     <div class="nav-inner">
         <a href="index.html" class="nav-logo">
-            <img src="assets/logo.svg" class="logo-img" alt="DDP Logo">
+            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
         </a>
-
         <ul class="nav-links">
             <li><a href="programma.html">Programma</a></li>
             <li><a href="partij.html">De Partij</a></li>
             <li><a href="bestuur.html">Bestuur</a></li>
-            <li><a href="verkiezingen.html" class="active">Verkiezingen</a></li>
+            <li><a class="active" href="verkiezingen.html">Verkiezingen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
         <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
@@ -34,9 +32,9 @@
     <a href="programma.html">Programma</a>
     <a href="partij.html">De Partij</a>
     <a href="bestuur.html">Bestuur</a>
-    <a href="verkiezingen.html">Verkiezingen</a>
+    <a class="active" href="verkiezingen.html">Verkiezingen</a>
     <a href="nieuws.html">Nieuws</a>
-    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="lidworden.html">Word lid</a>
     <a href="contact.html">Contact</a>
 </div>
 
@@ -46,33 +44,92 @@ function toggleMenu() {
 }
 </script>
 
+<!-- SUBNAV -->
+<div class="subnav">
+    <div class="subnav-inner">
+        <a href="index.html">Home</a> /
+        <span>Verkiezingen 2026</span>
+    </div>
+</div>
 
 <!-- HERO -->
-<section class="hero small-hero">
+<section class="small-hero">
     <div class="hero-content">
         <h1>Verkiezingen 2026</h1>
-        <p>Een digitaal Nederland dat werkt voor iedereen — veilig, eerlijk en mensgericht.</p>
+        <p class="subtitle">De DDP strijdt voor een eerlijke en mensgerichte digitale toekomst.</p>
     </div>
 </section>
 
 <!-- CONTENT -->
-<section class="verkiezingen">
-    <h2>Onze belofte aan Nederland</h2>
-    <p>De Democratische Digitale Partij doet mee aan de verkiezingen met één missie: een digitale overheid die betrouwbaar, transparant en rechtvaardig is.</p>
+<section class="content-container">
 
-    <h2>Kernpunten voor 2026</h2>
+    <h2>Onze inzet voor 2026</h2>
+    <p>
+        In 2026 doet de Democratische Digitale Partij voor het eerst officieel mee aan de Tweede Kamerverkiezingen. 
+        Met een programma dat gericht is op vrijheid, transparantie en menselijke regie over technologie, willen wij 
+        Nederland voorbereiden op een digitale toekomst die werkt voor iedereen.
+    </p>
+
+    <h2>Kernpunten voor de verkiezingen</h2>
+
+    <div class="card-list">
+        <div class="card">
+            <h3>Digitale Grondrechten</h3>
+            <p>Privacy, autonomie en gelijke digitale behandeling in de Grondwet verankeren.</p>
+        </div>
+        <div class="card">
+            <h3>Transparante overheid</h3>
+            <p>Publieke algoritmes volledig openbaar, uitlegbaar en controleerbaar.</p>
+        </div>
+        <div class="card">
+            <h3>Geen machtsmisbruik door technologie</h3>
+            <p>Verbod op risicoprofilering, massasurveillance en manipulatieve systemen.</p>
+        </div>
+        <div class="card">
+            <h3>Digitale soevereiniteit</h3>
+            <p>Nederland niet afhankelijk laten worden van Big Tech of buitenlandse infrastructuur.</p>
+        </div>
+        <div class="card">
+            <h3>Open publieke infrastructuur</h3>
+            <p>Open source technologie waar mogelijk, publiek eigendom waar noodzakelijk.</p>
+        </div>
+    </div>
+
+    <h2>Onze campagne voor 2026</h2>
+    <p>
+        De DDP bouwt aan een beweging van burgers, experts, wetenschappers en professionals die geloven dat 
+        Nederland een eerlijkere digitale toekomst verdient. Onze campagne richt zich op bewustwording, 
+        dialoog, participatie en publieke transparantie.
+    </p>
+
+    <div class="card-list">
+        <div class="card">
+            <h3>Landelijke bijeenkomsten</h3>
+            <p>Informatieve sessies, debatten en workshops over digitale rechten.</p>
+        </div>
+        <div class="card">
+            <h3>Online participatie</h3>
+            <p>Leden en vrijwilligers kunnen direct meedenken via digitale platforms.</p>
+        </div>
+        <div class="card">
+            <h3>Onderzoeksprojecten</h3>
+            <p>De DDP initieert eigen onderzoeken naar AI-transparantie en digitale veiligheid.</p>
+        </div>
+    </div>
+
+    <h2>Hoe jij kunt helpen</h2>
     <ul>
-        <li>Verankerde digitale grondrechten voor elke Nederlander.</li>
-        <li>Einde aan black-box algoritmes in de overheid.</li>
-        <li>Mensgerichte technologie die niemand buitensluit.</li>
-        <li>Een veilige, open en publieke digitale infrastructuur.</li>
-        <li>Volledige democratische controle over AI in de overheid.</li>
+        <li>Word lid en steun de beweging</li>
+        <li>Meld je aan als vrijwilliger</li>
+        <li>Doneer om onze campagne mogelijk te maken</li>
+        <li>Deel ons programma en ons manifest</li>
     </ul>
 
-    <h2>Doe mee</h2>
-    <p>De DDP groeit snel — maar echte verandering maken we samen. Help mee, word lid of steun de campagne.</p>
+    <div class="page-cta">
+        <a href="lidworden.html" class="primary-btn big">Word lid</a>
+        <a href="doneren.html" class="secondary-btn big" style="margin-left: 12px;">Doneer</a>
+    </div>
 
-    <a href="lidworden.html" class="primary-btn big">Word lid van de DDP</a>
 </section>
 
 <!-- FOOTER -->

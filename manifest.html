@@ -22,7 +22,7 @@
             <li><a href="bestuur.html">Bestuur</a></li>
             <li><a href="verkiezingen.html">Verkiezingen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
@@ -41,64 +41,79 @@
     <a href="contact.html">Contact</a>
 </div>
 
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
+
+
+<!-- SUBNAV / BREADCRUMBS -->
+<div class="subnav">
+    <div class="subnav-inner">
+        <a href="index.html">Home</a> /
+        <span>Manifest</span>
+    </div>
+</div>
+
+
 <!-- HERO -->
-<section class="hero small-hero">
+<section class="small-hero">
     <div class="hero-content">
         <h1>Het Manifest</h1>
-        <p>Onze visie voor een vrije, veilige en mensgerichte digitale toekomst.</p>
+        <p class="subtitle">Onze visie voor een vrije, veilige en mensgerichte digitale toekomst.</p>
     </div>
 </section>
 
-<!-- MANIFEST SECTIE -->
+
+<!-- MANIFEST BODY -->
 <section class="manifest">
 
     <h2>Waarden & Visie</h2>
     <p>
         De Democratische Digitale Partij staat voor een samenleving waarin digitale technologie nooit de mens overstijgt,
-        maar haar dient. Wij geloven dat digitale vooruitgang alleen duurzaam en rechtvaardig kan zijn als de menselijke
-        maat, autonomie en grondrechten centraal staan. Vrijheid, privacy en democratische controle vormen de kern van
-        onze politieke identiteit.
+        maar haar dient. Vrijheid, autonomie, privacy en democratische controle vormen de kern van onze politieke identiteit.
     </p>
 
     <h2>Missie</h2>
     <p>
-        Onze missie is om Nederland te beschermen en te versterken in een tijdperk waarin technologie steeds grotere
-        invloed heeft op ons dagelijks leven. Wij streven naar transparantie, stevige publieke waarborgen en een digitale
-        infrastructuur die in handen blijft van de samenleving — niet van Big Tech of ondoorzichtige algoritmen.
+        Onze missie is Nederland te beschermen en te versterken in een tijdperk waarin technologie steeds meer invloed heeft 
+        op ons dagelijks leven. Wij streven naar transparantie, sterke publieke waarborgen en een digitale infrastructuur die 
+        eigendom blijft van de samenleving — niet van Big Tech.
     </p>
 
     <h2>Kernbeloften</h2>
     <ul>
         <li>Digitale grondrechten wettelijk verankeren en beschermen.</li>
         <li>Volledige publieke controle over algoritmes in overheid en essentiële diensten.</li>
-        <li>Een menselijke benadering van technologie: geen uitsluiting, geen profiling, geen automatische ongelijkheid.</li>
+        <li>Een mensgerichte benadering van technologie: geen uitsluiting, geen automatische ongelijkheid.</li>
         <li>Een veilige, betrouwbare en open digitale infrastructuur voor iedereen.</li>
-        <li>Transparantie in al onze processen en politieke keuzes.</li>
     </ul>
 
     <h2>Organisatieprincipes</h2>
-    <p>
-        De DDP wordt georganiseerd volgens de principes van openbaarheid, participatie en gedeelde verantwoordelijkheid.
-        Besluitvorming is transparant, toegankelijk en gebaseerd op inhoud. Leden spelen een actieve rol in de koers van
-        de partij, ondersteund door moderne, veilige digitale tools.
-    </p>
+    <ul>
+        <li>Volledige transparantie binnen de partijorganisatie.</li>
+        <li>Openbare vergaderingen, publieke financiële verantwoording.</li>
+        <li>Open source waar mogelijk, standaard openbaar.</li>
+        <li>Inspraak en ledenparticipatie centraal in besluitvorming.</li>
+    </ul>
 
     <h2>Transparantiebeleid</h2>
     <p>
-        De DDP publiceert relevante financiële gegevens, sponsorschappen, beleidskeuzes en interne procedures. Wij bouwen
-        aan maximale burgercontrole en geloven dat politieke vertrouwen begint bij volledige openheid.
+        Wij publiceren al onze algoritmes, systemen, standpunten en partijstructuren in begrijpelijke taal. 
+        Iedere burger heeft het recht om te weten hoe beslissingen tot stand komen.
     </p>
 
     <h2>Verantwoording</h2>
     <p>
-        Wij leggen verantwoording af aan onze leden, kiezers en de samenleving. Niet alleen tijdens verkiezingen, maar
-        continu. Door rapportages, digitale dashboards, openbaar beleid en peer-review binnen de partij blijven wij
-        eerlijk en scherp.
+        De DDP legt jaarlijks volledige verantwoording af aan haar leden, burgers en onafhankelijke instanties. 
+        Democratie wordt sterker door openheid — en technologie mag daar nooit een uitzondering op vormen.
     </p>
 
+    <!-- DOWNLOAD CTA -->
     <div class="manifest-cta">
-        <a href="assets/dp-manifest.pdf" class="button-primary" download>
-            Download het Manifest (PDF)
+        <a href="assets/dp-manifest.pdf" class="primary-btn" download>
+            📄 Download het Manifest (PDF)
         </a>
     </div>
 
@@ -106,11 +121,15 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-    <p>Doe mee met de DDP · Voor een vrije, veilige en mensgerichte digitale toekomst.</p>
-    <p>© 2025 Democratische Digitale Partij</p>
+    <div class="footer-content">
+        <p>© 2025 Democratische Digitale Partij</p>
+        <p>
+            <a href="mailto:info@democratischedigitalepartij.nl">
+                info@democratischedigitalepartij.nl
+            </a>
+        </p>
+    </div>
 </footer>
-
-<script src="js/menu.js"></script>
 
 </body>
 </html>

@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programma – Democratische Digitale Partij</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
+
 <body>
 
-<!-- NAV -->
 <nav class="nav">
     <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-            <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
-        </a>
+        <a href="index.html" class="nav-logo"><img src="assets/logo.svg"></a>
         <ul class="nav-links">
-            <li><a class="active" href="programma.html">Programma</a></li>
+            <li><a href="programma.html" class="active">Programma</a></li>
             <li><a href="partij.html">De Partij</a></li>
             <li><a href="bestuur.html">Bestuur</a></li>
             <li><a href="verkiezingen.html">Verkiezingen</a></li>
@@ -24,143 +21,59 @@
             <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a class="active" href="programma.html">Programma</a>
-    <a href="partij.html">De Partij</a>
-    <a href="bestuur.html">Bestuur</a>
-    <a href="verkiezingen.html">Verkiezingen</a>
-    <a href="nieuws.html">Nieuws</a>
-    <a href="lidworden.html">Word lid</a>
-    <a href="contact.html">Contact</a>
+<div class="small-hero">
+    <h1>Ons Programma</h1>
+    <p>Voor een eerlijke, veilige en mensgerichte digitale samenleving.</p>
 </div>
 
-<script>
-function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("open");
-}
-</script>
-
-<!-- SUBNAV -->
-<div class="subnav">
-    <div class="subnav-inner">
-        <a href="index.html">Home</a> /
-        <span>Programma</span>
-    </div>
+<div class="breadcrumbs">
+    <a href="index.html">Home</a> › Programma
 </div>
 
-<!-- HERO -->
-<section class="small-hero">
-    <div class="hero-content">
-        <h1>Ons Programma</h1>
-        <p class="subtitle">Voor een eerlijke, veilige en menselijke digitale samenleving.</p>
-    </div>
-</section>
-
-<!-- CONTENT -->
-<section class="content-container">
-
+<div class="section">
     <h2>1. Digitale Grondrechten</h2>
-    <p>
-        Wij verankeren digitale grondrechten in de wet: privacy, autonomie, gelijke behandeling en transparantie 
-        worden standaardrechten voor iedere burger.
-    </p>
+    <ul>
+        <li>Wettelijke verankering van digitale grondrechten.</li>
+        <li>Strikte grenzen aan surveillance en dataverzameling.</li>
+        <li>Recht op inzicht in alle opgeslagen overheidsdata.</li>
+        <li>Voorrang van menselijke autonomie boven algoritmes.</li>
+    </ul>
+</div>
 
-    <div class="card-list">
-        <div class="card">
-            <h3>Privacy als grondrecht</h3>
-            <p>Strikte regels op dataverzameling en profiling door overheid én bedrijven.</p>
-        </div>
-        <div class="card">
-            <h3>Grenzen aan surveillance</h3>
-            <p>Geen massasurveillance. Technologie beschermt burgers — bespiedt ze niet.</p>
-        </div>
-        <div class="card">
-            <h3>Recht op digitale autonomie</h3>
-            <p>Mensen houden regie over hun data, identiteit en digitale interacties.</p>
-        </div>
-    </div>
-
+<div class="section">
     <h2>2. Publieke Controle op Algoritmes</h2>
-    <p>
-        Technologie mag nooit ondemocratisch worden. Daarom verplichten we volledig inzicht, toetsing, en controle 
-        over alle algoritmes die de overheid inzet.
-    </p>
+    <ul>
+        <li>Verplicht openbaar Algoritmeregister.</li>
+        <li>Verbod op black-box systemen in de overheid.</li>
+        <li>Onafhankelijke toetsing op risico’s & discriminatie.</li>
+    </ul>
+</div>
 
-    <div class="card-list">
-        <div class="card">
-            <h3>Nationaal Algoritmeregister</h3>
-            <p>Volledig openbaar, inclusief risicoanalyses en gebruikte datasets.</p>
-        </div>
-        <div class="card">
-            <h3>Verbod op black-box AI</h3>
-            <p>Geen onverklaarbare systemen in publieke dienstverlening.</p>
-        </div>
-        <div class="card">
-            <h3>Mensen boven machines</h3>
-            <p>Altijd recht op menselijke tussenkomst en second opinion.</p>
-        </div>
-    </div>
-
+<div class="section">
     <h2>3. Mensgerichte AI</h2>
-    <p>
-        AI moet mensen versterken, niet controleren, sturen of uitsluiten.
-    </p>
+    <ul>
+        <li>Geen AI die burgers uitsluit of schaadt.</li>
+        <li>Verbod op AI-profilering in publieke diensten.</li>
+        <li>Altijd menselijke behandeling en second opinion.</li>
+    </ul>
+</div>
 
-    <div class="card-list">
-        <div class="card">
-            <h3>Geen risicoprofilering</h3>
-            <p>Stop op bias, scoring en ongelijkheid door algoritmes.</p>
-        </div>
-        <div class="card">
-            <h3>AI altijd optioneel</h3>
-            <p>Je kunt altijd kiezen voor een mens in plaats van een systeem.</p>
-        </div>
-        <div class="card">
-            <h3>Toegankelijke overheid</h3>
-            <p>Iedereen kan dienstverlening begrijpen en gebruiken.</p>
-        </div>
-    </div>
-
+<div class="section">
     <h2>4. Open Publieke Digitale Infrastructuur</h2>
-    <p>
-        Een veilige, betrouwbare digitale basis is publiek eigendom — nooit afhankelijk van Big Tech.
-    </p>
+    <ul>
+        <li>Open source waar mogelijk, onafhankelijk waar nodig.</li>
+        <li>Minder afhankelijkheid van Big Tech.</li>
+        <li>Nationale digitale infrastructuur in publieke handen.</li>
+    </ul>
+</div>
 
-    <div class="card-list">
-        <div class="card">
-            <h3>Open source als standaard</h3>
-            <p>Publiek geld → publieke code. Transparantie en veiligheid voorop.</p>
-        </div>
-        <div class="card">
-            <h3>Nationale digitale basislaag</h3>
-            <p>Infrastructuur voor identificatie, data en dienstverlening in publieke handen.</p>
-        </div>
-        <div class="card">
-            <h3>Digitale soevereiniteit</h3>
-            <p>Minder afhankelijkheid van Amerikaanse en Chinese techgiganten.</p>
-        </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="page-cta">
-        <a href="lidworden.html" class="primary-btn big">
-            Word lid en steun onze missie
-        </a>
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-        <p>© 2025 Democratische Digitale Partij</p>
-        <p><a href="mailto:info@democratischedigitalepartij.nl">info@democratischedigitalepartij.nl</a></p>
-    </div>
-</footer>
+<div class="footer-cta">
+    <a href="lidworden.html">Word lid</a>
+    <a href="doneren.html">Doneer</a>
+</div>
 
 </body>
 </html>

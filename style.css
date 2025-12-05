@@ -120,4 +120,8 @@
     margin: 8px 0 14px 0;
     font-weight: 600;
 }
+/* Zorg dat pagina's niet onder de fixed CTA-balk vallen */
+body {
+    padding-bottom: 120px; /* ruimte zodat CTA nooit overlapt */
+}
 

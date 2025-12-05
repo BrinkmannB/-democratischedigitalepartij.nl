@@ -76,4 +76,8 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+/* Election-specific tweaks */
+.page-cta a {
+    margin-top: 10px;
+}
 

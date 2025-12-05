@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Het Bestuur – Democratische Digitale Partij</title>
+    <title>Bestuur – Democratische Digitale Partij</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
-
 <body>
 
 <!-- NAV -->
@@ -16,17 +15,15 @@
         <a href="index.html" class="nav-logo">
             <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
         </a>
-
         <ul class="nav-links">
             <li><a href="programma.html">Programma</a></li>
             <li><a href="partij.html">De Partij</a></li>
-            <li><a href="bestuur.html" class="active">Bestuur</a></li>
+            <li><a class="active" href="bestuur.html">Bestuur</a></li>
             <li><a href="verkiezingen.html">Verkiezingen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
         <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
@@ -34,10 +31,10 @@
 <div id="mobileMenu" class="mobile-menu">
     <a href="programma.html">Programma</a>
     <a href="partij.html">De Partij</a>
-    <a href="bestuur.html">Bestuur</a>
+    <a class="active" href="bestuur.html">Bestuur</a>
     <a href="verkiezingen.html">Verkiezingen</a>
     <a href="nieuws.html">Nieuws</a>
-    <a href="lidworden.html" class="nav-cta">Word lid</a>
+    <a href="lidworden.html">Word lid</a>
     <a href="contact.html">Contact</a>
 </div>
 
@@ -47,56 +44,77 @@ function toggleMenu() {
 }
 </script>
 
+<!-- SUBNAV -->
+<div class="subnav">
+    <div class="subnav-inner">
+        <a href="index.html">Home</a> /
+        <span>Bestuur</span>
+    </div>
+</div>
+
 <!-- HERO -->
-<section class="hero small-hero">
+<section class="small-hero">
     <div class="hero-content">
-        <h1>Het Bestuur</h1>
-        <p>De Democratische Digitale Partij wordt geleid door mensen met visie, transparantie en een hart voor Nederland.</p>
+        <h1>Het Bestuur van de DDP</h1>
+        <p class="subtitle">Verantwoordelijk voor koers, integriteit en digitale democratische waarden.</p>
     </div>
 </section>
 
-<!-- BESTUUR GRID -->
-<section class="bestuur">
-    <div class="bestuur-grid">
+<!-- CONTENT -->
+<section class="content-container">
 
-        <!-- BAS BRINKMANN -->
-        <div class="bestuur-card">
-            <img src="assets/bas.png" alt="Bas Brinkmann" class="bestuur-foto">
+    <h2>Oprichter & Voorzitter</h2>
+    
+    <div class="board-grid">
+        <div class="board-card">
+            <img src="assets/bas.png" alt="Bas Brinkmann" class="board-photo">
             <h3>Bas Brinkmann</h3>
-            <p class="functie">Oprichter & Partijvoorzitter</p>
-            <p class="bio">
-                Bas is initiatiefnemer van de DDP en zet zich in voor een veilige, transparante en mensgerichte digitale samenleving.
-                Zijn focus ligt op digitale grondrechten, AI-ethiek en publieke controle op technologie.
+            <p class="role">Oprichter & Voorzitter</p>
+            <p>
+                Bas is de grondlegger van de Democratische Digitale Partij. Zijn missie: technologie 
+                volledig in dienst van mensen zetten, met stevige digitale grondrechten en een 
+                transparante overheid als fundament. Als voorzitter bewaakt hij visie, integriteit en koers.
             </p>
         </div>
-
-        <!-- EXTRA BESTUURSLEDEN (voor nu lege placeholders, later vulbaar) -->
-        <div class="bestuur-card">
-            <div class="bestuur-foto placeholder"></div>
-            <h3>Nader te bepalen</h3>
-            <p class="functie">Bestuurslid</p>
-            <p class="bio">
-                De DDP breidt haar bestuur uit in lijn met haar missie en groeiende beweging. Aanmeldingen worden zorgvuldig beoordeeld.
-            </p>
-        </div>
-
-        <div class="bestuur-card">
-            <div class="bestuur-foto placeholder"></div>
-            <h3>Nader te bepalen</h3>
-            <p class="functie">Secretaris</p>
-            <p class="bio">
-                Verantwoordelijk voor transparante communicatie, verslaglegging en organisatie van partijactiviteiten.
-            </p>
-        </div>
-
     </div>
-</section>
 
-<!-- CTA -->
-<section class="cta">
-    <h2>Doe mee aan de DDP</h2>
-    <p>Sluit je aan bij een beweging die strijdt voor digitale rechten, menselijke technologie en democratische controle.</p>
-    <a href="lidworden.html" class="primary-btn big">Word lid</a>
+    <h2>Onze bestuursstructuur</h2>
+    <p>
+        De DDP werkt met een compacte, transparante en digitale bestuursstructuur. 
+        Taken worden verdeeld volgens het principe: **heldere verantwoordelijkheden, maximale controleerbaarheid.**
+    </p>
+
+    <div class="card-list">
+        <div class="card">
+            <h3>Voorzitter</h3>
+            <p>Visie, strategie, publieke vertegenwoordiging en partijontwikkeling.</p>
+        </div>
+        <div class="card">
+            <h3>Secretaris (open positie)</h3>
+            <p>Organisatie, ledenadministratie, procedures en interne communicatie.</p>
+        </div>
+        <div class="card">
+            <h3>Penningmeester (open positie)</h3>
+            <p>Financiën, transparantie, rapportages en toezicht op donaties.</p>
+        </div>
+    </div>
+
+    <h2>Onze principes</h2>
+    <ul>
+        <li>Transparante besluitvorming en volledige openbaarheid.</li>
+        <li>Menselijke autonomie en digitale rechten bewaakt door governance.</li>
+        <li>Open source waar mogelijk, controleerbaarheid altijd.</li>
+        <li>Onafhankelijk, geen invloed van lobby of Big Tech.</li>
+        <li>Continue verantwoording aan leden en samenleving.</li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="page-cta">
+        <a href="lidworden.html" class="primary-btn big">
+            Doe mee en bouw mee aan de DDP
+        </a>
+    </div>
+
 </section>
 
 <!-- FOOTER -->

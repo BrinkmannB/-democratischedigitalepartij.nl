@@ -1,35 +1,90 @@
-/* Nieuws grid */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin-top: 30px;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuws – Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-.news-card {
-    background: #F7F9FB;
-    border: 1px solid #D8E0E8;
-    padding: 24px;
-    border-radius: 12px;
-}
+<body>
 
-.news-card h3 {
-    margin-top: 0;
-}
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP Logo">
+        </a>
 
-.news-card .date {
-    font-size: 0.85rem;
-    color: #6A7B8A;
-    margin-bottom: 10px;
-}
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a class="active" href="nieuws.html">Nieuws</a></li>
+            <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-.news-link {
-    display: inline-block;
-    margin-top: 10px;
-    color: #3B82F6;
-    text-decoration: none;
-}
+<!-- HERO -->
+<div class="small-hero">
+    <h1>Nieuws & Updates</h1>
+    <p>Blijf op de hoogte van ontwikkelingen, standpunten en actuele thema’s.</p>
+</div>
 
-.news-link:hover {
-    text-decoration: underline;
-}
+<!-- BREADCRUMBS -->
+<div class="breadcrumbs">
+    <a href="index.html">Home</a> › Nieuws
+</div>
+
+<!-- NIEUWS SECTIE -->
+<div class="section">
+    <h2>Laatste berichten</h2>
+
+    <div class="news-grid">
+
+        <!-- NIEUWS ITEM 1 -->
+        <div class="news-card">
+            <div class="news-date">1 december 2025</div>
+            <h3>DDP presenteert digitale grondrechten voor Nederland</h3>
+            <p>Onze nieuwe set digitale grondrechten vormt het fundament voor een mensgerichte digitale toekomst met privacy, autonomie en publieke controle op technologie.</p>
+            <a href="#" class="news-link">Lees meer →</a>
+        </div>
+
+        <!-- NIEUWS ITEM 2 -->
+        <div class="news-card">
+            <div class="news-date">17 november 2025</div>
+            <h3>Verbod op black-box algoritmes: waarom het nu moet gebeuren</h3>
+            <p>De DDP pleit voor volledige openbaarheid en controleerbaarheid van publieke algoritmes. Black-box systemen horen niet thuis in een democratie.</p>
+            <a href="#" class="news-link">Lees meer →</a>
+        </div>
+
+        <!-- NIEUWS ITEM 3 -->
+        <div class="news-card">
+            <div class="news-date">2 oktober 2025</div>
+            <h3>DDP start lidmaatschapscampagne voor 2026</h3>
+            <p>We bouwen een brede beweging voor digitale soevereiniteit, eerlijke technologie en menselijke regie. Sluit je aan en maak het verschil.</p>
+            <a href="#" class="news-link">Lees meer →</a>
+        </div>
+
+        <!-- NIEUWS ITEM 4 -->
+        <div class="news-card">
+            <div class="news-date">12 september 2025</div>
+            <h3>DDP waarschuwt voor risico’s van commerciële AI in overheidsdiensten</h3>
+            <p>Publieke technologie moet onafhankelijk, transparant en uitlegbaar zijn — niet afhankelijk van buitenlandse techgiganten.</p>
+            <a href="#" class="news-link">Lees meer →</a>
+        </div>
+
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="footer-cta">
+    <a href="lidworden.html" class="cta-blue">Word lid</a>
+    <a href="doneren.html" class="cta-outline">Doneer</a>
+</div>
+
+</body>
+</html>

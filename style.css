@@ -98,4 +98,26 @@
 .contact-card h3 {
     margin-top: 0;
 }
+/* Membership cards */
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin: 30px 0 50px 0;
+}
+
+.membership-card {
+    background: #F7F9FB;
+    border: 1px solid #D8E0E8;
+    padding: 26px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.membership-card .price {
+    font-size: 1.2rem;
+    color: #003A6C;
+    margin: 8px 0 14px 0;
+    font-weight: 600;
+}
 

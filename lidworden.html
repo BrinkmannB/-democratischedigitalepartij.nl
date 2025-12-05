@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word lid – Democratische Digitale Partij</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 </head>
-
 <body>
 
 <!-- NAV -->
@@ -15,17 +15,15 @@
         <a href="index.html" class="nav-logo">
             <img src="assets/logo.svg" alt="DDP Logo" class="logo-img">
         </a>
-
         <ul class="nav-links">
             <li><a href="programma.html">Programma</a></li>
             <li><a href="partij.html">De Partij</a></li>
             <li><a href="bestuur.html">Bestuur</a></li>
             <li><a href="verkiezingen.html">Verkiezingen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a href="lidworden.html" class="active nav-cta">Word lid</a></li>
+            <li><a class="active" href="lidworden.html">Word lid</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
         <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
@@ -36,7 +34,7 @@
     <a href="bestuur.html">Bestuur</a>
     <a href="verkiezingen.html">Verkiezingen</a>
     <a href="nieuws.html">Nieuws</a>
-    <a href="lidworden.html">Word lid</a>
+    <a class="active" href="lidworden.html">Word lid</a>
     <a href="contact.html">Contact</a>
 </div>
 
@@ -46,79 +44,81 @@ function toggleMenu() {
 }
 </script>
 
+<!-- SUBNAV -->
+<div class="subnav">
+    <div class="subnav-inner">
+        <a href="index.html">Home</a> /
+        <span>Word lid</span>
+    </div>
+</div>
+
 <!-- HERO -->
-<section class="hero small-hero">
+<section class="small-hero">
     <div class="hero-content">
-        <h1>Word lid van de Democratische Digitale Partij</h1>
-        <p class="subtitle">
-            Bouw mee aan een vrije, veilige en transparante digitale toekomst voor Nederland.
-        </p>
+        <h1>Word lid van de DDP</h1>
+        <p class="subtitle">Samen bouwen we aan een eerlijke, veilige en mensgerichte digitale toekomst.</p>
     </div>
 </section>
 
-<!-- BENEFITS -->
-<section class="lid-benefits">
+<!-- CONTENT -->
+<section class="content-container">
+
     <h2>Waarom lid worden?</h2>
-    <div class="benefit-grid">
-        <div class="benefit">
-            <h3>✔ Jij bepaalt de koers</h3>
-            <p>Als lid heb je direct invloed op ons programma en onze voorstellen.</p>
-        </div>
-        <div class="benefit">
-            <h3>✔ Ondersteun digitale grondrechten</h3>
-            <p>Help mee om privacy, autonomie en technologie-in-dienst-van-mensen te verankeren.</p>
-        </div>
-        <div class="benefit">
-            <h3>✔ Word onderdeel van een nieuwe beweging</h3>
-            <p>Een moderne partij die transparant, open en volledig mensgericht werkt.</p>
-        </div>
-    </div>
-</section>
-
-<!-- PRIJZEN & AANMELDING -->
-<section class="lid-price">
-    <h2>Lidmaatschap</h2>
-    <p class="price-intro">
-        De DDP kiest voor transparantie en toegankelijkheid.  
-        Jij bepaalt zélf je jaarlijkse bijdrage:
+    <p>
+        De Democratische Digitale Partij is een beweging van burgers die geloven dat technologie de mens moet dienen —
+        niet andersom. Als lid help je mee aan een toekomst waarin digitale rechten, transparantie en menselijke 
+        autonomie centraal staan.
     </p>
 
-    <div class="price-options">
-        <div class="price-card">
-            <h3>€12/jaar</h3>
-            <p>Voor studenten en mensen met een krap budget.</p>
+    <div class="card-list">
+        <div class="card">
+            <h3>Invloed op het partijprogramma</h3>
+            <p>Als lid denk je direct mee over beleid, standpunten en richting.</p>
         </div>
-
-        <div class="price-card recommended">
-            <h3>€24/jaar</h3>
-            <p>Standaard lidmaatschap. Hiermee steun je het digitale fundament van de partij.</p>
+        <div class="card">
+            <h3>Toegang tot evenementen</h3>
+            <p>Digitale sessies, meetups en workshops over AI, privacy en democratie.</p>
         </div>
-
-        <div class="price-card">
-            <h3>€60/jaar</h3>
-            <p>Voor wie onze missie extra wil ondersteunen.</p>
+        <div class="card">
+            <h3>Onderdeel van een beweging</h3>
+            <p>Je bouwt mee aan een partij die technologie opnieuw menselijk maakt.</p>
         </div>
     </div>
 
-    <p class="price-footer">
-        Je ontvangt binnen 24 uur een bevestiging en je persoonlijke ledennummer.
+    <h2>Lidmaatschapsvormen</h2>
+
+    <div class="membership-grid">
+
+        <div class="membership-card">
+            <h3>Standaard lidmaatschap</h3>
+            <p class="price">€12 / jaar</p>
+            <p>Voor iedereen die de missie van de DDP ondersteunt.</p>
+            <a href="mailto:lid@democratischedigitalepartij.nl" class="primary-btn">Word lid</a>
+        </div>
+
+        <div class="membership-card">
+            <h3>Steunlid</h3>
+            <p class="price">€25 / jaar</p>
+            <p>Extra bijdrage voor groei, onderzoek en campagneactiviteiten.</p>
+            <a href="mailto:lid@democratischedigitalepartij.nl" class="primary-btn">Word steunlid</a>
+        </div>
+
+        <div class="membership-card">
+            <h3>Vrijwilliger</h3>
+            <p class="price">Vrijwillige bijdrage</p>
+            <p>Help mee in communicatie, onderzoek, campagne of organisatie.</p>
+            <a href="mailto:vrijwilliger@democratischedigitalepartij.nl" class="secondary-btn">Meld je aan</a>
+        </div>
+
+    </div>
+
+    <h2>Vragen?</h2>
+    <p>
+        Voor vragen over lidmaatschap kun je contact opnemen via:
+        <br>
+        <a href="mailto:lid@democratischedigitalepartij.nl">lid@democratischedigitalepartij.nl</a>
     </p>
 
-    <!-- CTA BUTTON -->
-    <a href="mailto:lid@democratischedigitalepartij.nl?subject=Lid%20worden%20DDP" class="primary-btn big join-btn">
-        Meld je aan als lid
-    </a>
-
-    <p class="contact-note">
-        Vragen? Mail ons via <a href="mailto:lidmaatschap@democratischedigitalepartij.nl">lidmaatschap@democratischedigitalepartij.nl</a>
-    </p>
-</section>
-
-<!-- CTA -->
-<section class="cta">
-    <h2>Jouw stem telt — ook digitaal</h2>
-    <p>Sluit je aan bij een partij die de digitale toekomst wél begrijpt.</p>
-    <a href="mailto:lid@democratischedigitalepartij.nl" class="primary-btn big">Ik doe mee</a>
 </section>
 
 <!-- FOOTER -->

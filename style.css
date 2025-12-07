@@ -1,5 +1,5 @@
 /* ---------------------------------------------------
-   TYPOGRAFIE & BASIS
+   BASIS & TYPOGRAFIE
 --------------------------------------------------- */
 
 body {
@@ -8,12 +8,10 @@ body {
     background: #F5F7FA;
     color: #0F1B2A;
     line-height: 1.6;
-    padding-bottom: 120px; /* ruimte voor CTA bar */
 }
 
 h1, h2, h3 {
     margin-top: 0;
-    font-weight: 700;
     color: #0B2239;
 }
 
@@ -28,9 +26,9 @@ a {
 --------------------------------------------------- */
 
 .nav {
-    background: white;
+    background: #FFFFFF;
     border-bottom: 1px solid #E2E8F0;
-    padding: 18px 0;
+    padding: 16px 0;
     position: sticky;
     top: 0;
     z-index: 50;
@@ -50,13 +48,9 @@ a {
     gap: 22px;
 }
 
-.nav-links a {
-    font-weight: 500;
-}
-
 .nav-cta {
     background: #007BCE;
-    color: #fff !important;
+    color: white !important;
     padding: 8px 18px;
     border-radius: 8px;
 }
@@ -76,7 +70,7 @@ a {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.3fr 0.7fr;
     gap: 40px;
     align-items: center;
 }
@@ -91,34 +85,26 @@ a {
     opacity: 0.95;
 }
 
-.hero-buttons {
-    margin-top: 26px;
-}
-
-.primary-btn, .secondary-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: 600;
-    margin-right: 10px;
-}
-
 .primary-btn {
     background: #00A8E8;
+    padding: 12px 24px;
+    border-radius: 8px;
     color: white;
+    font-weight: 600;
 }
 
 .secondary-btn {
     border: 2px solid #00A8E8;
+    padding: 12px 24px;
+    border-radius: 8px;
     color: white;
+    font-weight: 600;
+    margin-left: 10px;
 }
 
-
-/* Hero Visual */
 .hero-visual {
-    background: url('assets/hero-pattern.svg');
+    background: url('../assets/hero-pattern.svg');
     background-size: cover;
-    background-position: center;
     height: 300px;
     border-radius: 16px;
     opacity: 0.9;
@@ -126,7 +112,7 @@ a {
 
 
 /* ---------------------------------------------------
-   SECTIONS
+   SECTION BLOCKS
 --------------------------------------------------- */
 
 .section {
@@ -135,23 +121,17 @@ a {
     background: white;
     padding: 40px;
     border-radius: 16px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
 }
 
-.grid-4 {
+.grid-4, .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
 }
 
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-}
+.grid-4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
 
-
-/* CARDS */
 .card, .news-card {
     background: #F8FAFC;
     border: 1px solid #E2E8F0;
@@ -166,7 +146,7 @@ a {
 
 
 /* ---------------------------------------------------
-   STATEMENT BANNER
+   STATEMENT
 --------------------------------------------------- */
 
 .statement {
@@ -179,37 +159,40 @@ a {
     border-radius: 16px;
 }
 
-.statement h2 {
-    margin-bottom: 10px;
-}
-
 
 /* ---------------------------------------------------
-   CTA BAR (STICKY ONDERAAN)
+   FOOTER
 --------------------------------------------------- */
 
-.footer-cta {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #00325F;
-    padding: 16px;
+.footer {
+    background: #0B1F33;
+    color: #D6E1EA;
+    padding: 50px 20px 20px;
+    margin-top: 80px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h4 {
+    color: white;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 8px;
+    color: #AFC7D8;
+}
+
+.footer-bottom {
     text-align: center;
-    z-index: 100;
-}
-
-.cta-blue {
-    background: #00A8E8;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 8px;
-    margin-right: 10px;
-}
-
-.cta-outline {
-    color: white;
-    padding: 12px 22px;
-    border: 2px solid #00A8E8;
-    border-radius: 8px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #A5B4C0;
+    border-top: 1px solid #1D334A;
 }

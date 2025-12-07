@@ -1,127 +1,215 @@
-/* Kleinere hero-variant */
-.small-hero {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #002046, #003A6C);
-}
+/* ---------------------------------------------------
+   TYPOGRAFIE & BASIS
+--------------------------------------------------- */
 
-.manifest {
-    padding: 60px 20px;
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-.manifest h2 {
-    margin-top: 40px;
-    font-size: 1.8rem;
-}
-
-.manifest p {
-    margin-top: 14px;
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #F5F7FA;
+    color: #0F1B2A;
     line-height: 1.6;
+    padding-bottom: 120px; /* ruimte voor CTA bar */
 }
 
-.manifest-cta {
-    text-align: center;
-    margin-top: 60px;
-}
-/* Subnavigation / breadcrumbs */
-.subnav {
-    background: #EAF1F7;
-    border-bottom: 1px solid #D0D8E0;
-    padding: 10px 0;
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #0B2239;
 }
 
-.subnav-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-    font-size: 0.9rem;
-    color: #003A6C;
-}
-
-.subnav a {
-    color: #005B99;
+a {
+    color: #007BCE;
     text-decoration: none;
 }
 
-.subnav a:hover {
-    text-decoration: underline;
+
+/* ---------------------------------------------------
+   NAVIGATIE
+--------------------------------------------------- */
+
+.nav {
+    background: white;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
-/* Board layout */
-.board-grid {
+
+.nav-inner {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    margin: 40px 0;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.board-card {
-    background: #F7F9FB;
-    border: 1px solid #D8E0E8;
-    border-radius: 12px;
-    padding: 30px;
-    max-width: 420px;
-    text-align: center;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 22px;
 }
 
-.board-photo {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 20px;
+.nav-links a {
+    font-weight: 500;
 }
 
-.board-card .role {
-    color: #3B82F6;
+.nav-cta {
+    background: #007BCE;
+    color: #fff !important;
+    padding: 8px 18px;
+    border-radius: 8px;
+}
+
+
+/* ---------------------------------------------------
+   HERO
+--------------------------------------------------- */
+
+.hero {
+    background: linear-gradient(135deg, #00325F, #00548F);
+    padding: 120px 20px 100px;
+    color: white;
+}
+
+.hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.hero-buttons {
+    margin-top: 26px;
+}
+
+.primary-btn, .secondary-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-right: 10px;
 }
-/* Election-specific tweaks */
-.page-cta a {
-    margin-top: 10px;
+
+.primary-btn {
+    background: #00A8E8;
+    color: white;
 }
-/* Contact page */
-.contact-grid {
+
+.secondary-btn {
+    border: 2px solid #00A8E8;
+    color: white;
+}
+
+
+/* Hero Visual */
+.hero-visual {
+    background: url('assets/hero-pattern.svg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 16px;
+    opacity: 0.9;
+}
+
+
+/* ---------------------------------------------------
+   SECTIONS
+--------------------------------------------------- */
+
+.section {
+    max-width: 1100px;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.grid-3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    margin: 30px 0 50px 0;
+    gap: 20px;
 }
 
-.contact-card {
-    background: #F7F9FB;
-    border: 1px solid #D8E0E8;
+
+/* CARDS */
+.card, .news-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
     padding: 22px;
     border-radius: 12px;
 }
 
-.contact-card h3 {
-    margin-top: 0;
-}
-/* Membership cards */
-.membership-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    margin: 30px 0 50px 0;
+.news-card .date {
+    color: #627D98;
+    font-size: 0.85rem;
 }
 
-.membership-card {
-    background: #F7F9FB;
-    border: 1px solid #D8E0E8;
-    padding: 26px;
-    border-radius: 12px;
+
+/* ---------------------------------------------------
+   STATEMENT BANNER
+--------------------------------------------------- */
+
+.statement {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 50px 30px;
     text-align: center;
+    background: linear-gradient(135deg, #003460, #005085);
+    color: white;
+    border-radius: 16px;
 }
 
-.membership-card .price {
-    font-size: 1.2rem;
-    color: #003A6C;
-    margin: 8px 0 14px 0;
-    font-weight: 600;
-}
-/* Zorg dat pagina's niet onder de fixed CTA-balk vallen */
-body {
-    padding-bottom: 120px; /* ruimte zodat CTA nooit overlapt */
+.statement h2 {
+    margin-bottom: 10px;
 }
 
+
+/* ---------------------------------------------------
+   CTA BAR (STICKY ONDERAAN)
+--------------------------------------------------- */
+
+.footer-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00325F;
+    padding: 16px;
+    text-align: center;
+    z-index: 100;
+}
+
+.cta-blue {
+    background: #00A8E8;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.cta-outline {
+    color: white;
+    padding: 12px 22px;
+    border: 2px solid #00A8E8;
+    border-radius: 8px;
+}

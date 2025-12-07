@@ -1,57 +1,127 @@
-/* HOME HERO */
-.home-hero {
-    background: linear-gradient(135deg, #002D5A, #004C82);
-    padding: 120px 20px;
-    text-align: center;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democratische Digitale Partij</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-.home-hero-inner {
-    max-width: 800px;
-    margin: 0 auto;
-}
+<body>
 
-.home-hero h1 {
-    font-size: 2.6rem;
-    margin-bottom: 20px;
-}
+<!-- NAVIGATIE -->
+<nav class="nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" alt="DDP Logo">
+        </a>
 
-.home-hero p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 32px;
-}
+        <ul class="nav-links">
+            <li><a href="programma.html">Programma</a></li>
+            <li><a href="partij.html">De Partij</a></li>
+            <li><a href="bestuur.html">Bestuur</a></li>
+            <li><a href="verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="nieuws.html">Nieuws</a></li>
+            <li><a href="lidworden.html" class="nav-cta">Word lid</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-/* POINT GRID */
-.point-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-}
+<!-- HERO -->
+<header class="hero">
+    <div class="hero-inner">
+        <div class="hero-text">
+            <h1>Een eerlijke digitale toekomst voor iedereen</h1>
+            <p>
+                De Democratische Digitale Partij bouwt aan een samenleving waarin technologie 
+                de democratie versterkt in plaats van verzwakt.
+            </p>
 
-.point-card {
-    background: #F7F9FB;
-    border: 1px solid #D8E0E8;
-    border-radius: 12px;
-    padding: 20px;
-}
+            <div class="hero-buttons">
+                <a href="programma.html" class="primary-btn">Lees ons programma</a>
+                <a href="lidworden.html" class="secondary-btn">Word lid</a>
+            </div>
+        </div>
 
-/* NEWS TEASER */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-}
+        <div class="hero-visual"></div>
+    </div>
+</header>
 
-.news-card {
-    background: #F7F9FB;
-    border: 1px solid #D8E0E8;
-    padding: 22px;
-    border-radius: 10px;
-}
+<!-- SPEERPUNTEN -->
+<section class="section">
+    <h2>Onze speerpunten</h2>
 
-.news-date {
-    color: #6A7B8A;
-    font-size: 0.85rem;
-    margin-bottom: 6px;
-}
+    <div class="grid-4">
+        <div class="card">
+            <h3>Digitale grondrechten</h3>
+            <p>Privacy en autonomie als bindende basis voor digitale vrijheid.</p>
+        </div>
+
+        <div class="card">
+            <h3>Publieke controle op algoritmes</h3>
+            <p>Geen black-box systemen. Overheids-AI moet open en uitlegbaar zijn.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mensgerichte technologie</h3>
+            <p>AI mag nooit uitsluiten of beïnvloeden zonder menselijke regie.</p>
+        </div>
+
+        <div class="card">
+            <h3>Open publieke infrastructuur</h3>
+            <p>Technologische onafhankelijkheid en digitale soevereiniteit.</p>
+        </div>
+    </div>
+</section>
+
+<!-- STATEMENT BANNER -->
+<section class="statement">
+    <h2>Digitale rechten zijn mensenrechten</h2>
+    <p>De DDP beschermt jouw toekomst in het digitale tijdperk.</p>
+</section>
+
+<!-- MANIFEST -->
+<section class="section">
+    <h2>Het Digitale Manifest</h2>
+    <p>
+        De DDP presenteert een nationale visie op democratische technologie: veilig, eerlijk en transparant.  
+        Download het volledige manifest of bekijk de webversie.
+    </p>
+
+    <a href="manifest.html" class="primary-btn">Lees het manifest</a>
+</section>
+
+<!-- NIEUWS -->
+<section class="section">
+    <h2>Laatste nieuws</h2>
+
+    <div class="grid-3">
+        <div class="news-card">
+            <span class="date">1 dec 2025</span>
+            <h3>DDP publiceert Digitale Grondrechten</h3>
+            <a href="nieuws.html">Lees meer →</a>
+        </div>
+
+        <div class="news-card">
+            <span class="date">17 nov 2025</span>
+            <h3>Waarom overheids-AI altijd openbaar moet zijn</h3>
+            <a href="nieuws.html">Lees meer →</a>
+        </div>
+
+        <div class="news-card">
+            <span class="date">12 okt 2025</span>
+            <h3>Start van onze campagne voor Verkiezingen 2026</h3>
+            <a href="nieuws.html">Lees meer →</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BAR -->
+<div class="footer-cta">
+    <a href="lidworden.html" class="cta-blue">Word lid</a>
+    <a href="doneren.html" class="cta-outline">Doneer</a>
+</div>
+
+</body>
+</html>

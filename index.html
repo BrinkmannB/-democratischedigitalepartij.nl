@@ -3,82 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Democratische Digitale Partij</title>
+    <title>Democratische Digitale Partij – Voor een eerlijke digitale toekomst</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- NAV -->
-<nav>
+<!-- NAVIGATIE -->
+<nav class="nav">
     <div class="nav-inner">
-        <a href="index.html" class="logo">DDP</a>
+        <a href="index.html" class="nav-logo">
+            <img src="assets/logo.svg" class="logo-img" alt="DDP logo">
+        </a>
+
         <ul class="nav-links">
             <li><a href="programma.html">Programma</a></li>
             <li><a href="partij.html">De Partij</a></li>
             <li><a href="bestuur.html">Bestuur</a></li>
             <li><a href="verkiezingen.html">Verkiezingen</a></li>
             <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a class="nav-cta" href="lidworden.html">Word lid</a></li>
+            <li><a href="doneer.html" class="nav-cta">Doneer</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
     </div>
 </nav>
 
+<div id="mobileMenu" class="mobile-menu">
+    <a href="programma.html">Programma</a>
+    <a href="partij.html">De Partij</a>
+    <a href="bestuur.html">Bestuur</a>
+    <a href="verkiezingen.html">Verkiezingen</a>
+    <a href="nieuws.html">Nieuws</a>
+    <a href="doneer.html">Doneer</a>
+    <a href="contact.html">Contact</a>
+</div>
+
 <!-- HERO -->
 <header class="hero">
-    <h1>Voor een vrije, veilige en mensgerichte digitale toekomst</h1>
-    <p>De Democratische Digitale Partij zet technologie weer in dienst van mensen — niet andersom.</p>
+    <div class="hero-content">
+        <h1>Voor een eerlijke, veilige en mensgerichte digitale toekomst</h1>
+        <p>De Democratische Digitale Partij strijdt voor sterke digitale grondrechten, transparante technologie en publieke controle op AI.</p>
 
-    <div class="hero-buttons">
-        <a class="btn-primary" href="programma.html">Lees ons programma</a>
-        <a class="btn-outline" href="lidworden.html">Word lid</a>
-        <a class="btn-outline" href="doneren.html">Doneer</a>
+        <div class="hero-buttons">
+            <a href="programma.html" class="btn primary">Lees ons programma</a>
+            <a href="lidworden.html" class="btn secondary">Word lid</a>
+        </div>
     </div>
 </header>
 
-<!-- SECTIE 1: Kernpunten -->
-<section>
-    <h2 class="page-title">Waar wij voor staan</h2>
-    <p class="page-subtitle">Onze beweging is gebouwd op vrijheid, transparantie en menselijke controle op technologie.</p>
+<!-- 3 PILLARS -->
+<section class="pillars">
+    <div class="pillar">
+        <h3>Digitale Grondrechten</h3>
+        <p>Privacy, autonomie en bescherming tegen misbruik van technologie.</p>
+    </div>
 
-    <div class="card-grid">
-        <div class="card">
-            <h3>Digitale Grondrechten</h3>
-            <p>Privacy, autonomie en gelijke behandeling wettelijk verankerd.</p>
-        </div>
+    <div class="pillar">
+        <h3>Publieke Controle op AI</h3>
+        <p>Transparante algoritmes en democratische toetsing binnen overheid en essentiële diensten.</p>
+    </div>
 
-        <div class="card">
-            <h3>Publieke Controle op Algoritmes</h3>
-            <p>Geen black-box systemen in de overheid — altijd toetsbaar, eerlijk en uitlegbaar.</p>
-        </div>
-
-        <div class="card">
-            <h3>Mensgerichte AI</h3>
-            <p>Technologie moet mensen versterken, nooit vervangen of sturen.</p>
-        </div>
-
-        <div class="card">
-            <h3>Open Digitale Infrastructuur</h3>
-            <p>Veilige, transparante systemen die eigendom blijven van de samenleving.</p>
-        </div>
+    <div class="pillar">
+        <h3>Mengerichte Technologie</h3>
+        <p>Technologie moet mensen versterken — nooit schaden, sturen of uitsluiten.</p>
     </div>
 </section>
 
-<!-- CTA LIDMAATSCHAP -->
-<section style="text-align:center;">
-    <h2>Sluit je aan bij de DDP</h2>
-    <p>Wij bouwen een beweging voor iedereen die gelooft in een eerlijke, veilige en mensgerichte digitale toekomst.</p>
-    <a class="btn-primary" href="lidworden.html">Word lid</a>
+<!-- CTA -->
+<section class="cta-wide">
+    <h2>Bouw mee aan de digitale toekomst van Nederland</h2>
+    <p>Iedereen die gelooft in een eerlijke digitale samenleving hoort bij de DDP.</p>
+    <a href="doneer.html" class="btn primary">Steun de DDP</a>
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer class="footer">
     <div class="footer-inner">
-        <p>© 2025 Democratische Digitale Partij</p>
-        <p><a href="manifest.html">Manifest</a> • <a href="privacy.html">Privacy</a> • <a href="contact.html">Contact</a></p>
+        <div class="footer-left">
+            <img src="assets/logo.svg" class="footer-logo" alt="DDP logo">
+            <p>Voor een vrije, veilige en mensgerichte digitale toekomst.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="manifest.html">Manifest</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="security.txt">Security.txt</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
+
+    <p class="footer-copy">© 2025 Democratische Digitale Partij</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    const m = document.getElementById("mobileMenu");
+    m.classList.toggle("open");
+}
+</script>
 
 </body>
 </html>
-

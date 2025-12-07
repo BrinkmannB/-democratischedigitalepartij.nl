@@ -1,42 +1,67 @@
-/* ---------------------------------------------------
-   BASIS & TYPOGRAFIE
---------------------------------------------------- */
+/* ----------------------------------------------------------
+   BASE DESIGN — NORD MINIMALISTISCH
+----------------------------------------------------------- */
+
+:root {
+    --nord0: #2E3440;
+    --nord1: #3B4252;
+    --nord2: #434C5E;
+    --nord3: #4C566A;
+    --nord4: #D8DEE9;
+    --nord5: #E5E9F0;
+    --nord6: #ECEFF4;
+
+    --blue1: #003A6C;
+    --blue2: #005CAB;
+    --blue3: #00A8E8;
+
+    --radius: 10px;
+    --max-width: 920px;
+}
+
+/* ----------------------------------------------------------
+   GLOBAL
+----------------------------------------------------------- */
 
 body {
     margin: 0;
-    font-family: system-ui, sans-serif;
-    background: #F5F7FA;
-    color: #0F1B2A;
-    line-height: 1.6;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background: var(--nord6);
+    color: var(--nord0);
+    line-height: 1.55;
 }
 
 h1, h2, h3 {
-    margin-top: 0;
-    color: #0B2239;
+    font-weight: 700;
+    color: var(--nord0);
 }
 
-a {
-    color: #007BCE;
-    text-decoration: none;
+p {
+    margin: 10px 0 18px 0;
+    color: var(--nord1);
 }
 
+section {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 40px 20px;
+}
 
-/* ---------------------------------------------------
-   NAVIGATIE
---------------------------------------------------- */
+/* ----------------------------------------------------------
+   NAVBAR
+----------------------------------------------------------- */
 
-.nav {
-    background: #FFFFFF;
-    border-bottom: 1px solid #E2E8F0;
+nav {
+    background: var(--nord0);
     padding: 16px 0;
-    position: sticky;
-    top: 0;
-    z-index: 50;
+    color: white;
 }
 
 .nav-inner {
-    max-width: 1100px;
+    max-width: var(--max-width);
     margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,154 +70,178 @@ a {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 22px;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: var(--nord6);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--blue3);
 }
 
 .nav-cta {
-    background: #007BCE;
-    color: white !important;
-    padding: 8px 18px;
-    border-radius: 8px;
+    padding: 6px 14px;
+    border: 1px solid var(--blue3);
+    border-radius: var(--radius);
+    color: var(--blue3) !important;
 }
 
+.nav-cta:hover {
+    background: var(--blue3);
+    color: white !important;
+}
 
-/* ---------------------------------------------------
-   HERO
---------------------------------------------------- */
+/* ----------------------------------------------------------
+   HERO (UNIVERSEEL)
+----------------------------------------------------------- */
 
 .hero {
-    background: linear-gradient(135deg, #00325F, #00548F);
-    padding: 120px 20px 100px;
+    padding: 90px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--blue1), var(--blue2));
     color: white;
 }
 
-.hero-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.3fr 0.7fr;
-    gap: 40px;
-    align-items: center;
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
 }
 
-.hero-text h1 {
-    font-size: 2.8rem;
-    margin-bottom: 18px;
-}
-
-.hero-text p {
+.hero p {
     font-size: 1.2rem;
-    opacity: 0.95;
+    color: var(--nord6);
 }
 
-.primary-btn {
-    background: #00A8E8;
-    padding: 12px 24px;
-    border-radius: 8px;
-    color: white;
+.hero-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.btn-primary {
+    background: var(--blue3);
+    padding: 12px 22px;
+    color: var(--nord0);
+    border-radius: var(--radius);
     font-weight: 600;
+    text-decoration: none;
 }
 
-.secondary-btn {
-    border: 2px solid #00A8E8;
-    padding: 12px 24px;
-    border-radius: 8px;
-    color: white;
-    font-weight: 600;
-    margin-left: 10px;
-}
-
-.hero-visual {
-    background: url('../assets/hero-pattern.svg');
-    background-size: cover;
-    height: 300px;
-    border-radius: 16px;
+.btn-primary:hover {
     opacity: 0.9;
 }
 
-
-/* ---------------------------------------------------
-   SECTION BLOCKS
---------------------------------------------------- */
-
-.section {
-    max-width: 1100px;
-    margin: 60px auto;
-    background: white;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+.btn-outline {
+    border: 2px solid var(--blue3);
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    color: var(--blue3);
+    text-decoration: none;
+    font-weight: 600;
 }
 
-.grid-4, .grid-3 {
-    display: grid;
-    gap: 20px;
-}
-
-.grid-4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-
-.card, .news-card {
-    background: #F8FAFC;
-    border: 1px solid #E2E8F0;
-    padding: 22px;
-    border-radius: 12px;
-}
-
-.news-card .date {
-    color: #627D98;
-    font-size: 0.85rem;
-}
-
-
-/* ---------------------------------------------------
-   STATEMENT
---------------------------------------------------- */
-
-.statement {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 50px 30px;
-    text-align: center;
-    background: linear-gradient(135deg, #003460, #005085);
+.btn-outline:hover {
+    background: var(--blue3);
     color: white;
-    border-radius: 16px;
 }
 
+/* ----------------------------------------------------------
+   CONTENT PAGES
+----------------------------------------------------------- */
 
-/* ---------------------------------------------------
+.page-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: var(--nord3);
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------------------------
+   CARDS (Nieuws, bestuur etc.)
+----------------------------------------------------------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: var(--radius);
+    border: 1px solid #D9E1E7;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card-date {
+    font-size: 0.85rem;
+    color: var(--nord3);
+    margin-bottom: 8px;
+}
+
+/* ----------------------------------------------------------
+   DONATIE PAGINA
+----------------------------------------------------------- */
+
+.donate-section {
+    padding: 20px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.donate-block {
+    margin-bottom: 22px;
+}
+
+.donate-qr {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+.bankinfo {
+    margin-top: 10px;
+}
+
+.monthly-donation {
+    margin-top: 20px;
+}
+
+/* ----------------------------------------------------------
    FOOTER
---------------------------------------------------- */
+----------------------------------------------------------- */
 
-.footer {
-    background: #0B1F33;
-    color: #D6E1EA;
-    padding: 50px 20px 20px;
-    margin-top: 80px;
+footer {
+    background: var(--nord0);
+    padding: 40px 20px;
+    color: var(--nord5);
+    margin-top: 50px;
 }
 
 .footer-inner {
-    max-width: 1100px;
+    max-width: var(--max-width);
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
 }
 
-.footer-col h4 {
-    color: white;
+footer a {
+    color: var(--blue3);
+    text-decoration: none;
 }
 
-.footer-col a {
-    display: block;
-    margin-bottom: 8px;
-    color: #AFC7D8;
+footer a:hover {
+    opacity: 0.8;
 }
 
-.footer-bottom {
-    text-align: center;
-    padding-top: 20px;
-    font-size: 0.9rem;
-    color: #A5B4C0;
-    border-top: 1px solid #1D334A;
-}

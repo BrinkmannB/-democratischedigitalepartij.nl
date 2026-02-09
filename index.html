@@ -3,8 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Democratische Digitale Partij – Voor een eerlijke digitale toekomst</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description"
+          content="De Democratische Digitale Partij strijdt voor digitale grondrechten, transparante technologie en publieke controle op AI. Bouw mee aan een eerlijke, veilige en mensgerichte digitale toekomst.">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.democratischedigitalepartij.nl/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Democratische Digitale Partij – Voor een eerlijke digitale toekomst">
+    <meta property="og:description" content="Digitale grondrechten, transparante technologie en publieke controle op AI.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.democratischedigitalepartij.nl/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -12,61 +32,68 @@
 <!-- NAVIGATIE -->
 <nav class="nav">
     <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-            <img src="assets/logo.svg" class="logo-img" alt="DDP logo">
+        <a href="/" class="nav-logo">
+            <img src="/assets/logo.svg" class="logo-img" alt="Democratische Digitale Partij logo">
         </a>
 
         <ul class="nav-links">
-            <li><a href="programma.html">Programma</a></li>
-            <li><a href="partij.html">De Partij</a></li>
-            <li><a href="bestuur.html">Bestuur</a></li>
-            <li><a href="verkiezingen.html">Verkiezingen</a></li>
-            <li><a href="nieuws.html">Nieuws</a></li>
-            <li><a href="doneer.html" class="nav-cta">Doneer</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/programma.html">Programma</a></li>
+            <li><a href="/partij.html">De Partij</a></li>
+            <li><a href="/bestuur.html">Bestuur</a></li>
+            <li><a href="/verkiezingen.html">Verkiezingen</a></li>
+            <li><a href="/nieuws.html">Nieuws</a></li>
+            <li><a href="/doneer.html" class="nav-cta">Doneer</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
 
-        <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+        <button class="mobile-toggle"
+                type="button"
+                aria-controls="mobileMenu"
+                aria-expanded="false"
+                onclick="toggleMenu()">☰</button>
     </div>
 </nav>
 
-<div id="mobileMenu" class="mobile-menu">
-    <a href="programma.html">Programma</a>
-    <a href="partij.html">De Partij</a>
-    <a href="bestuur.html">Bestuur</a>
-    <a href="verkiezingen.html">Verkiezingen</a>
-    <a href="nieuws.html">Nieuws</a>
-    <a href="doneer.html">Doneer</a>
-    <a href="contact.html">Contact</a>
+<div id="mobileMenu" class="mobile-menu" hidden>
+    <a href="/programma.html">Programma</a>
+    <a href="/partij.html">De Partij</a>
+    <a href="/bestuur.html">Bestuur</a>
+    <a href="/verkiezingen.html">Verkiezingen</a>
+    <a href="/nieuws.html">Nieuws</a>
+    <a href="/doneer.html">Doneer</a>
+    <a href="/contact.html">Contact</a>
 </div>
 
 <!-- HERO -->
 <header class="hero">
     <div class="hero-content">
         <h1>Voor een eerlijke, veilige en mensgerichte digitale toekomst</h1>
-        <p>De Democratische Digitale Partij strijdt voor sterke digitale grondrechten, transparante technologie en publieke controle op AI.</p>
+        <p>
+            De Democratische Digitale Partij zet zich in voor sterke digitale grondrechten,
+            transparante technologie en publieke controle op AI.
+        </p>
 
         <div class="hero-buttons">
-            <a href="programma.html" class="btn primary">Lees ons programma</a>
-            <a href="lidworden.html" class="btn secondary">Word lid</a>
+            <a href="/programma.html" class="btn primary">Lees ons programma</a>
+            <a href="/lidworden.html" class="btn secondary">Word lid</a>
         </div>
     </div>
 </header>
 
-<!-- 3 PILLARS -->
+<!-- PIJLERS -->
 <section class="pillars">
     <div class="pillar">
-        <h3>Digitale Grondrechten</h3>
+        <h2>Digitale grondrechten</h2>
         <p>Privacy, autonomie en bescherming tegen misbruik van technologie.</p>
     </div>
 
     <div class="pillar">
-        <h3>Publieke Controle op AI</h3>
+        <h2>Publieke controle op AI</h2>
         <p>Transparante algoritmes en democratische toetsing binnen overheid en essentiële diensten.</p>
     </div>
 
     <div class="pillar">
-        <h3>Mengerichte Technologie</h3>
+        <h2>Mensgerichte technologie</h2>
         <p>Technologie moet mensen versterken — nooit schaden, sturen of uitsluiten.</p>
     </div>
 </section>
@@ -75,22 +102,22 @@
 <section class="cta-wide">
     <h2>Bouw mee aan de digitale toekomst van Nederland</h2>
     <p>Iedereen die gelooft in een eerlijke digitale samenleving hoort bij de DDP.</p>
-    <a href="doneer.html" class="btn primary">Steun de DDP</a>
+    <a href="/doneer.html" class="btn primary">Steun de DDP</a>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
     <div class="footer-inner">
         <div class="footer-left">
-            <img src="assets/logo.svg" class="footer-logo" alt="DDP logo">
+            <img src="/assets/logo.svg" class="footer-logo" alt="Democratische Digitale Partij logo">
             <p>Voor een vrije, veilige en mensgerichte digitale toekomst.</p>
         </div>
 
         <div class="footer-links">
-            <a href="manifest.html">Manifest</a>
-            <a href="privacy.html">Privacy</a>
-            <a href="security.txt">Security.txt</a>
-            <a href="contact.html">Contact</a>
+            <a href="/manifest.html">Manifest</a>
+            <a href="/privacy.html">Privacy</a>
+            <a href="/security.txt">Security.txt</a>
+            <a href="/contact.html">Contact</a>
         </div>
     </div>
 
@@ -99,8 +126,17 @@
 
 <script>
 function toggleMenu() {
-    const m = document.getElementById("mobileMenu");
-    m.classList.toggle("open");
+    const menu = document.getElementById("mobileMenu");
+    const btn = document.querySelector(".mobile-toggle");
+    const open = !menu.hasAttribute("hidden");
+
+    if (open) {
+        menu.setAttribute("hidden", "");
+        btn.setAttribute("aria-expanded", "false");
+    } else {
+        menu.removeAttribute("hidden");
+        btn.setAttribute("aria-expanded", "true");
+    }
 }
 </script>
 
